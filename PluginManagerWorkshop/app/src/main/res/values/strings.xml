@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PluginManagerWorkshop</string>
+    <string name="text_plugin_manager">Plugin Manager</string>
+    <string name="text_plugins">Plugins</string>
+</resources>
