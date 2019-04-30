@@ -7,13 +7,21 @@ import android.app.Service;
 import android.os.Build;
 import android.os.Handler;
 import android.support.annotation.RequiresApi;
+import android.util.Log;
+
+import com.artlite.pluginmanagerapi.core.DLCPluginApplication;
 
 import java.util.UUID;
 
 /**
  * Class which provide the base service
  */
-abstract class BaseService extends Service {
+public abstract class DLCBaseService extends Service {
+
+    /**
+     * {@link String} constant of the TAG value
+     */
+    private static final String TAG = DLCBaseService.class.getSimpleName();
 
     /**
      * {@link String} constant of the channel id
@@ -32,7 +40,7 @@ abstract class BaseService extends Service {
     public void onCreate() {
         super.onCreate();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            this.applyAndroidOreoFix();
+            this.applyOreoFix();
         }
     }
 
@@ -40,7 +48,7 @@ abstract class BaseService extends Service {
      * Method which provide to applying of the android oreo fix
      */
     @RequiresApi(api = Build.VERSION_CODES.O)
-    private void applyAndroidOreoFix() {
+    private void applyOreoFix() {
         // Create the NotificationChannel, but only on API 26+ because
         // the NotificationChannel class is new and not in the support library
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -62,6 +70,22 @@ abstract class BaseService extends Service {
                 .setCategory(Notification.CATEGORY_SERVICE)
                 .build();
         this.startForeground(101, notification);
+    }
+
+    /**
+     * Method which provide the stop service functional
+     */
+    public void stopService() {
+        if (DLCPluginApplication.getInstance() != null) {
+            DLCPluginApplication.getInstance()
+                    .endTask(this, this.handler);
+        }
+        try {
+            this.stopForeground(true);
+            this.stopSelf();
+        } catch (Exception ex) {
+            Log.e(TAG, "stopService: ", ex);
+        }
     }
 
 }

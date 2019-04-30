@@ -10,12 +10,12 @@ import android.util.Log;
 /**
  * Class which provide the model for the installed package info
  */
-public final class PackageModel implements Parcelable {
+public final class DLCPackageModel implements Parcelable {
 
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = PackageModel.class.getSimpleName();
+    private static final String TAG = DLCPackageModel.class.getSimpleName();
 
     /**
      * {@link String} value of the application name
@@ -50,7 +50,7 @@ public final class PackageModel implements Parcelable {
     /**
      * Default constructor
      */
-    public PackageModel() {
+    public DLCPackageModel() {
     }
 
     /**
@@ -63,7 +63,7 @@ public final class PackageModel implements Parcelable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        PackageModel that = (PackageModel) o;
+        DLCPackageModel that = (DLCPackageModel) o;
         if (versionCode != that.versionCode) return false;
         if (applicationName != null
                 ? !applicationName.equals(that.applicationName)
@@ -82,7 +82,7 @@ public final class PackageModel implements Parcelable {
     }
 
     /**
-     * Method which provide the hash code for the {@link PackageModel}
+     * Method which provide the hash code for the {@link DLCPackageModel}
      *
      * @return {@link Integer} value of the hash code
      */
@@ -130,7 +130,7 @@ public final class PackageModel implements Parcelable {
      *
      * @param in instance of the {@link Parcel}
      */
-    protected PackageModel(Parcel in) {
+    protected DLCPackageModel(Parcel in) {
         this.applicationName = in.readString();
         this.packageName = in.readString();
         this.version = in.readString();
@@ -141,16 +141,16 @@ public final class PackageModel implements Parcelable {
     /**
      * Instance of the {@link Creator}
      */
-    public static final Creator<PackageModel> CREATOR
-            = new Creator<PackageModel>() {
+    public static final Creator<DLCPackageModel> CREATOR
+            = new Creator<DLCPackageModel>() {
         @Override
-        public PackageModel createFromParcel(Parcel source) {
-            return new PackageModel(source);
+        public DLCPackageModel createFromParcel(Parcel source) {
+            return new DLCPackageModel(source);
         }
 
         @Override
-        public PackageModel[] newArray(int size) {
-            return new PackageModel[size];
+        public DLCPackageModel[] newArray(int size) {
+            return new DLCPackageModel[size];
         }
     };
 
@@ -276,20 +276,20 @@ public final class PackageModel implements Parcelable {
     }
 
     /**
-     * Builder for the {@link PackageModel}
+     * Builder for the {@link DLCPackageModel}
      */
     public static final class Builder {
 
         /**
-         * Instance of the {@link PackageModel}
+         * Instance of the {@link DLCPackageModel}
          */
-        private PackageModel model;
+        private DLCPackageModel model;
 
         /**
          * Default constructor
          */
         public Builder() {
-            model = new PackageModel();
+            model = new DLCPackageModel();
         }
 
         /**
@@ -343,11 +343,11 @@ public final class PackageModel implements Parcelable {
         }
 
         /**
-         * Method which provide to build of the {@link PackageModel}
+         * Method which provide to build of the {@link DLCPackageModel}
          *
-         * @return instance of the {@link PackageModel}
+         * @return instance of the {@link DLCPackageModel}
          */
-        public PackageModel build() {
+        public DLCPackageModel build() {
             return model;
         }
     }

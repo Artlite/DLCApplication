@@ -10,36 +10,36 @@ import java.lang.ref.WeakReference;
 /**
  * Class which provide the context container functionality
  */
-public final class ContextManager {
+public final class DLCContextManager {
 
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = ContextManager.class.getSimpleName();
+    private static final String TAG = DLCContextManager.class.getSimpleName();
 
     /**
-     * Instance of the {@link ApplicationManager}
+     * Instance of the {@link DLCApplicationManager}
      */
-    private static ContextManager instance;
+    private static DLCContextManager instance;
 
     /**
-     * Method which provide the getting of the instance of the {@link ApplicationManager}
+     * Method which provide the getting of the instance of the {@link DLCApplicationManager}
      *
-     * @return instance of the {@link ApplicationManager}
+     * @return instance of the {@link DLCApplicationManager}
      */
     @Nullable
-    public static ContextManager getInstance() {
+    public static DLCContextManager getInstance() {
         return instance;
     }
 
     /**
-     * Method which provide the creating of the {@link ApplicationManager}
+     * Method which provide the creating of the {@link DLCApplicationManager}
      *
      * @param context instance of the {@link Context}
      */
     public static void init(@NonNull Context context) {
         if (instance == null) {
-            instance = new ContextManager(context);
+            instance = new DLCContextManager(context);
         }
     }
 
@@ -49,11 +49,11 @@ public final class ContextManager {
     private final WeakReference<Context> contextReference;
 
     /**
-     * Constructor which provide to create the {@link ApplicationManager} with parameters
+     * Constructor which provide to create the {@link DLCApplicationManager} with parameters
      *
      * @param context instance of the {@link Context}
      */
-    private ContextManager(@NonNull Context context) {
+    private DLCContextManager(@NonNull Context context) {
         this.contextReference = new WeakReference<>(context);
     }
 

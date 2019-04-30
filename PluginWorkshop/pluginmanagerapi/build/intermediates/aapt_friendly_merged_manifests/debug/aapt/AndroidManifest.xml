@@ -13,17 +13,17 @@
 
     <application>
         <service
-            android:name="com.artlite.pluginmanagerapi.services.ManagerListeningService"
+            android:name="com.artlite.pluginmanagerapi.services.DLCManagerListeningService"
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedService" />
         <service
-            android:name="com.artlite.pluginmanagerapi.services.PluginListeningService"
+            android:name="com.artlite.pluginmanagerapi.services.DLCPluginListeningService"
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedService" />
         <service
-            android:name="com.artlite.pluginmanagerapi.services.PluginActionService"
+            android:name="com.artlite.pluginmanagerapi.services.DLCPluginActionService"
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedService" />

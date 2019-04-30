@@ -7,11 +7,11 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.artlite.pluginmanagerapi.callbacks.ApiManagerCallback;
-import com.artlite.pluginmanagerapi.constants.AppConstants;
-import com.artlite.pluginmanagerapi.core.ManagerApplication;
-import com.artlite.pluginmanagerapi.core.PluginApplication;
-import com.artlite.pluginmanagerapi.models.PackageModel;
+import com.artlite.pluginmanagerapi.callbacks.DLCManagerCallback;
+import com.artlite.pluginmanagerapi.constants.DLCConstants;
+import com.artlite.pluginmanagerapi.core.DLCManagerApplication;
+import com.artlite.pluginmanagerapi.core.DLCPluginApplication;
+import com.artlite.pluginmanagerapi.models.DLCPackageModel;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,27 +24,27 @@ import java.util.Set;
 /**
  * Class which provide the api interaction
  */
-public final class ApiManager {
+public final class DLCApiManager {
 
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = ApiManager.class.getSimpleName();
+    private static final String TAG = DLCApiManager.class.getSimpleName();
 
     /**
-     * Instance of the {@link ApiManager}
+     * Instance of the {@link DLCApiManager}
      */
-    private static ApiManager instance;
+    private static DLCApiManager instance;
 
     /**
-     * Method which provide the getting of the instance of the {@link ApiManager}
+     * Method which provide the getting of the instance of the {@link DLCApiManager}
      *
-     * @return instance of the {@link ApiManager}
+     * @return instance of the {@link DLCApiManager}
      */
     @NonNull
-    public static ApiManager getInstance() {
+    public static DLCApiManager getInstance() {
         if (instance == null) {
-            instance = new ApiManager();
+            instance = new DLCApiManager();
         }
         return instance;
     }
@@ -67,23 +67,29 @@ public final class ApiManager {
     /**
      * Instance of the {@link Map}
      */
-    private volatile Map<String, PackageModel> models = new HashMap<>();
+    private volatile Map<String, DLCPackageModel> models = new HashMap<>();
 
     /**
      * Default constructor
      */
-    private ApiManager() {
-        Log.d(TAG, "ApiManager: default constructor");
+    private DLCApiManager() {
+        Log.d(TAG, "DLCApiManager: default constructor");
     }
 
     /**
      * Method which provide the receive the plugins
      *
-     * @param callback instance of the {@link ApiManagerCallback}
+     * @param callback instance of the {@link DLCManagerCallback}
      */
-    public void recievePlugins(@Nullable ApiManagerCallback callback) {
-        if (callback == null) return;
+    public void receivePlugins(@Nullable DLCManagerCallback callback) {
+        Log.d(TAG, "receivePlugins: ---");
+        if (callback == null) {
+            Log.d(TAG, "receivePlugins: callback is null");
+            return;
+        }
+        Log.d(TAG, "receivePlugins: callback isn't null");
         new PluginReceiver(callback).execute();
+        Log.d(TAG, "receivePlugins: ---");
     }
 
     /**
@@ -92,17 +98,20 @@ public final class ApiManager {
      * @return instance of the {@link List}
      */
     @NonNull
-    public List<PackageModel> getPlugins() {
-        final List<PackageModel> models = new ArrayList<>();
+    public List<DLCPackageModel> getPlugins() {
+        Log.d(TAG, "getPlugins: ---");
+        final List<DLCPackageModel> models = new ArrayList<>();
         final Iterator<String> iterator = this.plugins.iterator();
         while (iterator.hasNext()) {
             final String packageName = iterator.next();
-            final PackageModel packageModel = this.models.get(packageName);
+            final DLCPackageModel packageModel = this.models.get(packageName);
             if (packageModel != null) {
                 packageModel.setEnabled(this.started.contains(packageModel.getPackageName()));
                 models.add(packageModel);
             }
         }
+        Log.d(TAG, "getPlugins: models " + models);
+        Log.d(TAG, "getPlugins: ---");
         return models;
     }
 
@@ -110,13 +119,17 @@ public final class ApiManager {
      * Method which provide the updating of the application lists
      */
     private void update() {
-        final List<PackageModel> models = ApplicationManager
+        Log.d(TAG, "update: ---");
+        final List<DLCPackageModel> models = DLCApplicationManager
                 .getInstance().getInstalledApplications();
-        final Iterator<PackageModel> iterator = models.listIterator();
+        Log.d(TAG, "update: installed applications " + models);
+        final Iterator<DLCPackageModel> iterator = models.listIterator();
         final String managerName = this.getManagerPackage();
+        Log.d(TAG, "update: manager name " + managerName);
         this.packages.clear();
         while (iterator.hasNext()) {
-            final PackageModel model = iterator.next();
+            final DLCPackageModel model = iterator.next();
+            Log.d(TAG, "update: model " + model);
             try {
                 this.packages.add(model.getPackageName());
                 this.models.put(model.getPackageName(), model);
@@ -125,9 +138,11 @@ public final class ApiManager {
             }
         }
         if (managerName != null) {
+            Log.d(TAG, "update: remove manager itself");
             this.packages.remove(managerName);
             this.models.remove(managerName);
         }
+        Log.d(TAG, "update: ---");
     }
 
     /**
@@ -135,20 +150,25 @@ public final class ApiManager {
      */
     private synchronized void ping() {
         Log.d(TAG, "ping: pinging to the service");
+        Log.d(TAG, "ping: ---");
         this.update();
         final Iterator<String> iterator = this.packages.iterator();
         final String name = this.getManagerPackage();
+        Log.d(TAG, "ping: manager name " + name);
         while (iterator.hasNext()) {
             final String packageName = iterator.next();
+            Log.d(TAG, "ping: package manager " + packageName);
             try {
                 final Intent intent = new Intent();
-                intent.setClassName(packageName, AppConstants.K_PLUGIN_LISTEN_SERVICE);
-                intent.putExtra(AppConstants.K_KEY_PACKAGE, name);
+                intent.setClassName(packageName, DLCConstants.K_PLUGIN_LISTEN_SERVICE);
+                intent.putExtra(DLCConstants.K_KEY_PACKAGE, name);
+                Log.d(TAG, "ping: pinging intent " + intent);
                 this.startService(intent);
             } catch (Exception ex) {
                 Log.e(TAG, "ping: ", ex);
             }
         }
+        Log.d(TAG, "ping: ---");
     }
 
     /**
@@ -157,15 +177,23 @@ public final class ApiManager {
      * @param managerPackage {@link String} value of the manager package name
      */
     public synchronized void answer(@Nullable String managerPackage) {
+        Log.d(TAG, "answer: ---");
+        Log.d(TAG, "answer: manager name " + managerPackage);
         try {
             String name = this.getPluginPackage();
+            Log.d(TAG, "answer: plugin name " + name);
             final Intent intent = new Intent();
-            intent.setClassName(managerPackage, AppConstants.K_MANAGER_LISTEN_SERVICE);
-            intent.putExtra(AppConstants.K_KEY_PACKAGE, name);
+            intent.setClassName(managerPackage, DLCConstants.K_MANAGER_LISTEN_SERVICE);
+            intent.putExtra(DLCConstants.K_KEY_PACKAGE, name);
+            if (DLCPluginApplication.getInstance() != null) {
+                DLCPluginApplication.getInstance().pluginWillAnswer(intent);
+            }
+            Log.d(TAG, "answer: starting intent " + intent);
             this.startService(intent);
         } catch (Exception ex) {
             Log.e(TAG, "answer: ", ex);
         }
+        Log.d(TAG, "answer: ---");
     }
 
     /**
@@ -184,76 +212,100 @@ public final class ApiManager {
      * @param intent instance of the {@link Intent}
      */
     private void startService(@Nullable Intent intent) {
+        Log.d(TAG, "startService: ---");
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                ContextManager.getInstance()
+                Log.d(TAG, "startService: Build.VERSION.SDK_INT " +
+                        ">= Build.VERSION_CODES.O");
+                DLCContextManager.getInstance()
                         .getContext().startForegroundService(intent);
             } else {
-                ContextManager.getInstance()
+                Log.d(TAG, "startService: Build.VERSION.SDK_INT " +
+                        "< Build.VERSION_CODES.O");
+                DLCContextManager.getInstance()
                         .getContext().startService(intent);
             }
         } catch (Exception ex) {
             Log.e(TAG, "startService: ", ex);
         }
+        Log.d(TAG, "startService: ---");
     }
 
     /**
-     * Method which provide the start of the action for the {@link PackageModel}
+     * Method which provide the start of the action for the {@link DLCPackageModel}
      *
-     * @param model instance of the {@link PackageModel}
+     * @param model instance of the {@link DLCPackageModel}
      */
-    public boolean start(@Nullable PackageModel model) {
+    public boolean start(@Nullable DLCPackageModel model) {
         return this.start((model != null) ? model.getPackageName() : null);
     }
 
     /**
-     * Method which provide the start of the action for the {@link PackageModel}
+     * Method which provide the start of the action for the {@link DLCPackageModel}
      *
      * @param model instance of the {@link String}
      */
     public boolean start(@Nullable String model) {
+        Log.d(TAG, "start: ---");
+        Log.d(TAG, "start: model name " + model);
         try {
             final Intent intent = new Intent();
             intent.setClassName(model,
-                    AppConstants.K_PLUGIN_ACTION_SERVICE);
-            intent.putExtra(AppConstants.K_KEY_NEED_STOP, false);
+                    DLCConstants.K_PLUGIN_ACTION_SERVICE);
+            intent.putExtra(DLCConstants.K_KEY_NEED_STOP, false);
             this.started.add(model);
+            if (DLCManagerApplication.getInstance() != null) {
+                DLCManagerApplication.getInstance()
+                        .pluginWillStart(model, intent);
+            }
+            Log.d(TAG, "start: starting intent " + intent);
             this.startService(intent);
+            Log.d(TAG, "start: ---");
             return true;
         } catch (Exception ex) {
             Log.e(TAG, "start: ", ex);
 
         }
+        Log.d(TAG, "start: ---");
         return false;
     }
 
     /**
-     * Method which provide the start of the action for the {@link PackageModel}
+     * Method which provide the start of the action for the {@link DLCPackageModel}
      *
-     * @param model instance of the {@link PackageModel}
+     * @param model instance of the {@link DLCPackageModel}
      */
-    public boolean stop(@Nullable PackageModel model) {
+    public boolean stop(@Nullable DLCPackageModel model) {
         return this.stop((model != null) ? model.getPackageName() : null);
     }
 
     /**
-     * Method which provide the start of the action for the {@link PackageModel}
+     * Method which provide the start of the action for the {@link DLCPackageModel}
      *
      * @param model instance of the {@link String}
      */
     public boolean stop(@Nullable String model) {
+        Log.d(TAG, "stop: ---");
+        Log.d(TAG, "stop: model name " + model);
         try {
             final Intent intent = new Intent();
             intent.setClassName(model,
-                    AppConstants.K_PLUGIN_ACTION_SERVICE);
-            intent.putExtra(AppConstants.K_KEY_NEED_STOP, true);
+                    DLCConstants.K_PLUGIN_ACTION_SERVICE);
+            intent.putExtra(DLCConstants.K_KEY_NEED_STOP, true);
             this.started.remove(model);
+            if (DLCManagerApplication.getInstance() != null) {
+                DLCManagerApplication.getInstance()
+                        .pluginWillStop(model, intent);
+            }
+            Log.d(TAG, "stop: starting intent " + intent);
             this.startService(intent);
+            Log.d(TAG, "stop: ---");
             return true;
         } catch (Exception ex) {
             Log.e(TAG, "stop: ", ex);
 
         }
+        Log.d(TAG, "stop: ---");
         return false;
     }
 
@@ -261,11 +313,14 @@ public final class ApiManager {
      * Method which provide the stop of the all services
      */
     public void stopAll() {
+        Log.d(TAG, "stopAll: ---");
         final Iterator<String> iterator = this.started.iterator();
         while (iterator.hasNext()) {
             final String name = iterator.next();
+            Log.d(TAG, "stopAll: service name " + name);
             this.stop(name);
         }
+        Log.d(TAG, "stopAll: ---");
     }
 
     /**
@@ -276,7 +331,7 @@ public final class ApiManager {
     @Nullable
     private String getPluginPackage() {
         try {
-            return PluginApplication.getInstance().getPackageName();
+            return DLCPluginApplication.getInstance().getPackageName();
         } catch (Exception ex) {
             Log.e(TAG, "getPluginPackage: ", ex);
         }
@@ -291,7 +346,7 @@ public final class ApiManager {
     @Nullable
     private String getManagerPackage() {
         try {
-            return ManagerApplication.getInstance().getPackageName();
+            return DLCManagerApplication.getInstance().getPackageName();
         } catch (Exception ex) {
             Log.e(TAG, "getPluginPackage: ", ex);
         }
@@ -301,7 +356,8 @@ public final class ApiManager {
     /**
      * Method which provide the
      */
-    private static class PluginReceiver extends AsyncTask<Void, Void, List<PackageModel>> {
+    private static class PluginReceiver extends AsyncTask<Void,
+            Void, List<DLCPackageModel>> {
 
         /**
          * {@link String} constant of the TAG
@@ -309,16 +365,16 @@ public final class ApiManager {
         private static final String TAG = PluginReceiver.class.getSimpleName();
 
         /**
-         * Instance of the {@link ApiManagerCallback}
+         * Instance of the {@link DLCManagerCallback}
          */
-        private final ApiManagerCallback callback;
+        private final DLCManagerCallback callback;
 
         /**
          * Constructor which provide to create the {@link PluginReceiver} with parameters
          *
-         * @param callback instance of the {@link ApiManagerCallback}
+         * @param callback instance of the {@link DLCManagerCallback}
          */
-        private PluginReceiver(ApiManagerCallback callback) {
+        private PluginReceiver(@Nullable DLCManagerCallback callback) {
             this.callback = callback;
         }
 
@@ -331,25 +387,25 @@ public final class ApiManager {
          * @return A result, defined by the subclass of this task.
          */
         @Override
-        protected List<PackageModel> doInBackground(Void... voids) {
-            final List<PackageModel> models = new ArrayList<>();
-            ApiManager.getInstance().ping();
+        protected List<DLCPackageModel> doInBackground(Void... voids) {
+            final List<DLCPackageModel> models = new ArrayList<>();
+            DLCApiManager.getInstance().ping();
             try {
                 Thread.sleep(2000);
             } catch (InterruptedException ex) {
                 Log.e(TAG, "doInBackground: ", ex);
             }
-            models.addAll(ApiManager.getInstance().getPlugins());
+            models.addAll(DLCApiManager.getInstance().getPlugins());
             return models;
         }
 
         /**
          * Method which provide the port result functionality
          *
-         * @param list {@link List} of the {@link PackageModel}
+         * @param list {@link List} of the {@link DLCPackageModel}
          */
         @Override
-        protected void onPostExecute(List<PackageModel> list) {
+        protected void onPostExecute(List<DLCPackageModel> list) {
             super.onPostExecute(list);
             if (this.callback != null) {
                 this.callback.onResult(list);

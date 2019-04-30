@@ -1,23 +1,19 @@
 package com.artlite.pluginmanagerapi.services;
 
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.Service;
 import android.content.Intent;
-import android.os.Build;
 import android.os.IBinder;
 import android.util.Log;
 
-import com.artlite.pluginmanagerapi.constants.AppConstants;
-import com.artlite.pluginmanagerapi.core.ManagerApplication;
-import com.artlite.pluginmanagerapi.managers.ApiManager;
+import com.artlite.pluginmanagerapi.constants.DLCConstants;
+import com.artlite.pluginmanagerapi.core.DLCManagerApplication;
+import com.artlite.pluginmanagerapi.managers.DLCApiManager;
 
-public class ManagerListeningService extends BaseService {
+public class DLCManagerListeningService extends DLCBaseService {
 
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = ManagerListeningService.class.getSimpleName();
+    private static final String TAG = DLCManagerListeningService.class.getSimpleName();
 
     /**
      * Method which provide the on start service functionality
@@ -29,10 +25,10 @@ public class ManagerListeningService extends BaseService {
      */
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        if (ManagerApplication.getInstance() != null) {
+        if (DLCManagerApplication.getInstance() != null) {
             try {
-                final String name = intent.getStringExtra(AppConstants.K_KEY_PACKAGE);
-                ApiManager.getInstance().add(name);
+                final String name = intent.getStringExtra(DLCConstants.K_KEY_PACKAGE);
+                DLCApiManager.getInstance().add(name);
             } catch (Exception ex) {
                 Log.e(TAG, "onStartCommand: ", ex);
             }

@@ -9,7 +9,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.artlite.pluginmanagerapi.models.PackageModel;
+import com.artlite.pluginmanagerapi.models.DLCPackageModel;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -19,21 +19,22 @@ import java.util.List;
  * Class which provide the additional functionality which provide to get information
  * about the installed applications
  */
-public final class ApplicationHelper {
+public final class DLCApplicationHelper {
 
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = ApplicationHelper.class.getSimpleName();
+    private static final String TAG = DLCApplicationHelper.class.getSimpleName();
 
     /**
      * Method which provide the getting of the list of the installed applications
      *
-     * @return list of the {@link PackageModel}
+     * @return list of the {@link DLCPackageModel}
      */
     @NonNull
-    public static List<PackageModel> getInstalledApplications(@Nullable final Context context) {
-        List<PackageModel> models = new ArrayList<>();
+    public static List<DLCPackageModel> getInstalledApplications(@Nullable final Context context) {
+        Log.d(TAG, "getInstalledApplications: ---");
+        List<DLCPackageModel> models = new ArrayList<>();
         if (context != null) {
             final PackageManager packageManager = context.getPackageManager();
             List<PackageInfo> packs = packageManager.getInstalledPackages(0);
@@ -44,7 +45,7 @@ public final class ApplicationHelper {
                         | ApplicationInfo.FLAG_UPDATED_SYSTEM_APP;
                 if ((packageInfo.applicationInfo.flags & mask) == 0) {
                     try {
-                        PackageModel model = new PackageModel();
+                        DLCPackageModel model = new DLCPackageModel();
                         model.setApplicationName(packageInfo.applicationInfo
                                 .loadLabel(packageManager).toString());
                         model.setPackageName(packageInfo.packageName);
@@ -58,6 +59,8 @@ public final class ApplicationHelper {
                 }
             }
         }
+        Log.d(TAG, "getInstalledApplications: models " + models);
+        Log.d(TAG, "getInstalledApplications: ---");
         return models;
     }
 

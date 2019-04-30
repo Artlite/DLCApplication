@@ -4,16 +4,16 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
-import com.artlite.pluginmanagerapi.constants.AppConstants;
-import com.artlite.pluginmanagerapi.core.PluginApplication;
-import com.artlite.pluginmanagerapi.managers.ApiManager;
+import com.artlite.pluginmanagerapi.constants.DLCConstants;
+import com.artlite.pluginmanagerapi.core.DLCPluginApplication;
+import com.artlite.pluginmanagerapi.managers.DLCApiManager;
 
-public class PluginListeningService extends BaseService {
+public class DLCPluginListeningService extends DLCBaseService {
 
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = PluginListeningService.class.getSimpleName();
+    private static final String TAG = DLCPluginListeningService.class.getSimpleName();
 
     /**
      * Method which provide the on start service functionality
@@ -25,14 +25,24 @@ public class PluginListeningService extends BaseService {
      */
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        if (PluginApplication.getInstance() != null) {
+        Log.d(TAG, "onStartCommand: ---");
+        if (DLCPluginApplication.getInstance() != null) {
+            Log.d(TAG, "onStartCommand: plugin application isn't null");
             try {
-                final String name = intent.getStringExtra(AppConstants.K_KEY_PACKAGE);
-                ApiManager.getInstance().answer(name);
+                final String name = intent.getStringExtra(DLCConstants.K_KEY_PACKAGE);
+                Log.d(TAG, "onStartCommand: manager package " + name);
+                if (DLCPluginApplication.getInstance().isNeedAnswer(name)) {
+                    Log.d(TAG, "onStartCommand: plugin is need to answer");
+                    DLCApiManager.getInstance().answer(name);
+                } else {
+                    Log.d(TAG, "onStartCommand: plugin isn't need to answer");
+                    this.stopService();
+                }
             } catch (Exception ex) {
                 Log.e(TAG, "onStartCommand: ", ex);
             }
         }
+        Log.d(TAG, "onStartCommand: ---");
         return super.onStartCommand(intent, flags, startId);
     }
 
