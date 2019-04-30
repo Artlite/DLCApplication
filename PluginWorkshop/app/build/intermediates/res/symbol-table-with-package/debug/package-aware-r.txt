@@ -1,4 +1,4 @@
-com.artlite.pluginworkshop
+com.artlite.pluginworkshop1
 color colorAccent
 color colorPrimary
 color colorPrimaryDark

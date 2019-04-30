@@ -4,7 +4,7 @@ ADDED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidMani
 INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml:1:1-15:12
 INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml:1:1-15:12
 INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml:1:1-15:12
-MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-32:12
+MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-32:12
 INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml:1:1-15:12
 INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml:1:1-15:12
 INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml:1:1-15:12
@@ -26,8 +26,8 @@ INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidM
 		ADDED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml:1:11-69
 application
 ADDED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml:5:5-14:19
-MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-30:19
-MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-30:19
+MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-30:19
+MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-30:19
 	android:supportsRtl
 		ADDED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
@@ -46,8 +46,8 @@ uses-sdk
 INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml
 INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml
-MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
-MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
 INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml
 INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -59,36 +59,36 @@ INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidM
 		ADDED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Development\DLCApplication\PluginWorkshop\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-77
+ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-77
 	android:name
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-74
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-74
 service#com.artlite.pluginmanagerapi.services.DLCManagerListeningService
-ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-19:46
+ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-19:46
 	android:enabled
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-35
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-35
 	android:exported
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-36
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-36
 	tools:ignore
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-43
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-43
 	android:name
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-92
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-92
 service#com.artlite.pluginmanagerapi.services.DLCPluginListeningService
-ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-24:46
+ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-24:46
 	android:enabled
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-35
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-35
 	android:exported
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-36
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-36
 	tools:ignore
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-43
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-43
 	android:name
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-91
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-91
 service#com.artlite.pluginmanagerapi.services.DLCPluginActionService
-ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-29:46
+ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-29:46
 	android:enabled
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-35
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-35
 	android:exported
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-36
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-36
 	tools:ignore
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-43
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-43
 	android:name
-		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-88
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-88
