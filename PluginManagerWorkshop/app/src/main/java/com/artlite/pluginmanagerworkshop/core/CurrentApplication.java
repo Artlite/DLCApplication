@@ -27,7 +27,6 @@ public class CurrentApplication extends DLCManagerApplication {
     @Override
     public void pluginWillStart(@NonNull String pluginName,
                                 @NonNull Intent intent) {
-        intent.putExtra("com.artlite.message", "Hello world!!!");
     }
 
     /**

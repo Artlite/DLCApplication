@@ -1,4 +1,4 @@
-#Tue Apr 30 20:54:52 EEST 2019
+#Tue Apr 30 21:01:08 EEST 2019
 base.0=F\:\\Development\\DLCApplication\\PluginManagerWorkshop\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 path.0=classes.dex
 renamed.0=classes.dex
