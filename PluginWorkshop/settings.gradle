@@ -1,2 +1,0 @@
-include ':app', ':pluginmanagerapi'
-//project(':pluginmanagerapi').projectDir = new File('F:\\Development\\PluginManagerWorkshop\\pluginmanagerapi');

@@ -1,0 +1,75 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:1:1-25:12
+INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:1:1-25:12
+INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:1:1-25:12
+INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:1:1-25:12
+INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:1:1-25:12
+INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:1:1-25:12
+INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:1:1-25:12
+	package
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+		INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:1:1-25:12
+		INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:2:5-51
+	android:versionCode
+		INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:1:1-25:12
+		INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:5:22-74
+application
+ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:7:5-23:19
+service#com.artlite.pluginmanagerapi.services.ManagerListeningService
+ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:8:9-12:46
+	android:enabled
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:10:13-35
+	android:exported
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:11:13-36
+	tools:ignore
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:12:13-43
+	android:name
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:9:13-61
+service#com.artlite.pluginmanagerapi.services.PluginListeningService
+ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:13:9-17:46
+	android:enabled
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:15:13-35
+	android:exported
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:16:13-36
+	tools:ignore
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:17:13-43
+	android:name
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:14:13-60
+service#com.artlite.pluginmanagerapi.services.PluginActionService
+ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:18:9-22:46
+	android:enabled
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:20:13-35
+	android:exported
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:21:13-36
+	tools:ignore
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:22:13-43
+	android:name
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml:19:13-57
+uses-sdk
+INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+		INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+		ADDED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
+		INJECTED from F:\Development\PluginWorkshop\pluginmanagerapi\src\main\AndroidManifest.xml
