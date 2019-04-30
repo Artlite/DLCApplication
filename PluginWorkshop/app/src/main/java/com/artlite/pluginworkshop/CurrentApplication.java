@@ -1,18 +1,20 @@
 package com.artlite.pluginworkshop;
 
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.widget.Toast;
 
-import com.artlite.pluginmanagerapi.core.PluginApplication;
+import com.artlite.pluginmanagerapi.core.DLCPluginApplication;
+import com.artlite.pluginmanagerapi.services.DLCBaseService;
 
 
 /**
  * Instance of the current application
  */
-public class CurrentApplication extends PluginApplication {
+public class CurrentApplication extends DLCPluginApplication {
 
     /**
      * {@link Integer}value of the interval
@@ -49,29 +51,6 @@ public class CurrentApplication extends PluginApplication {
 
     /**
      * Method which provide the task executing
-     *
-     * @param handler instance of the {@link Handler}
-     */
-    @Override
-    public void startTask(@NonNull Handler handler) {
-        this.handler = handler;
-        this.isNeedTask = true;
-        this.step = 0;
-        this.handler.post(handlerTask);
-    }
-
-    /**
-     * Method which provide the task executing
-     *
-     * @param handler instance of the {@link Handler}
-     */
-    @Override
-    public void endTask(@NonNull Handler handler) {
-        this.isNeedTask = false;
-    }
-
-    /**
-     * Method which provide the task executing
      */
     protected void execute() {
         final String packageName = getPackageName();
@@ -99,4 +78,53 @@ public class CurrentApplication extends PluginApplication {
         toneG.startTone(ToneGenerator.TONE_CDMA_ALERT_CALL_GUARD, 200);
     }
 
+    /**
+     * Method which provide the checking if current plugin need to answer to
+     * the current manager package. This allow to divide the plugins from the manager.
+     *
+     * @param managerPackage {@link String} value of the manager package
+     * @return {@link Boolean} value if current plugin need to answer to the plugin
+     */
+    @Override
+    public boolean isNeedAnswer(@NonNull String managerPackage) {
+        return true;
+    }
+
+    /**
+     * Method which provide the add of the additional parameters before answering to the
+     * plugin
+     *
+     * @param intent instance of the {@link Intent}
+     */
+    @Override
+    public void pluginWillAnswer(@NonNull Intent intent) {
+
+    }
+
+    /**
+     * Method which provide the task executing
+     *
+     * @param service instance of the {@link DLCBaseService}
+     * @param handler instance of the {@link Handler}
+     */
+    @Override
+    public void startTask(@NonNull DLCBaseService service,
+                          @NonNull Handler handler) {
+        this.handler = handler;
+        this.isNeedTask = true;
+        this.step = 0;
+        this.handler.post(handlerTask);
+    }
+
+    /**
+     * Method which provide the task executing
+     *
+     * @param service instance of the {@link DLCBaseService}
+     * @param handler instance of the {@link Handler}
+     */
+    @Override
+    public void endTask(@NonNull DLCBaseService service,
+                        @NonNull Handler handler) {
+        this.isNeedTask = false;
+    }
 }

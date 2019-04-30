@@ -6,17 +6,17 @@
 
     <application>
         <service
-            android:name=".services.ManagerListeningService"
+            android:name=".services.DLCManagerListeningService"
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedService" />
         <service
-            android:name=".services.PluginListeningService"
+            android:name=".services.DLCPluginListeningService"
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedService" />
         <service
-            android:name=".services.PluginActionService"
+            android:name=".services.DLCPluginActionService"
             android:enabled="true"
             android:exported="true"
             tools:ignore="ExportedService" />

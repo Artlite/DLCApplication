@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Development\\PluginManagerWorkshop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
+            "outputFile": "F:\\Development\\DLCApplication\\PluginManagerWorkshop\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Artli\\.gradle\\caches\\transforms-2\\files-2.1\\221517fd3ce1b8caa8a108f4f48d094f\\res\\values-fi\\values-fi.xml",

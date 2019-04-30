@@ -7,7 +7,7 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import com.artlite.adapteredrecyclerview.models.ARCell;
-import com.artlite.pluginmanagerapi.managers.ApiManager;
+import com.artlite.pluginmanagerapi.managers.DLCApiManager;
 import com.artlite.pluginmanagerworkshop.R;
 import com.artlite.pluginmanagerworkshop.models.PluginModel;
 
@@ -86,9 +86,9 @@ public class PluginRecyclerView
         final PluginModel model = getObject();
         if (model != null) {
             if (isChecked) {
-                ApiManager.getInstance().start(model.getModel());
+                DLCApiManager.getInstance().start(model.getModel());
             } else {
-                ApiManager.getInstance().stop(model.getModel());
+                DLCApiManager.getInstance().stop(model.getModel());
             }
         }
     }

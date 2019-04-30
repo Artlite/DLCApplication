@@ -1,69 +1,60 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\a10d38d2b2f74065f4f4261109adf45e\AndroidManifest.xml:2:1-11:12
+ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
 MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.15] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\7eb0c044266716a08e00ed3ba0ba1458\AndroidManifest.xml:2:1-10:12
 MERGED from [com.artlite:adapteredrecyclerview:1.7.4] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\76bcdad69f6ef9fdd3d60392c431f70f\AndroidManifest.xml:2:1-16:12
-MERGED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-32:12
+MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-32:12
 MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\190e281fa307bbb0ae50987f7a4f0446\AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:design:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\8e32d17f4e072c004a0f346245aceef3\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\221517fd3ce1b8caa8a108f4f48d094f\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\56dcca759ec72f8c6194cfdd13af368e\AndroidManifest.xml:17:1-26:12
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\57141d47365ea1ac4ad1f84c422d6c36\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\02467c73db1f5992111422a9b018ac8b\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\2aa672c3777746d892639a0a22ea0935\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\338797e27740244618e9b24500b07de8\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\c78f6efc70f9f57e57599029f848b868\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\4fba41c8edfa7ea36af68f3549dcd719\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\c9e527b26e72f3d4d43753b0db9f04d2\AndroidManifest.xml:17:1-31:12
-INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:4:5-48
-		INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:4:5-48
+		INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
-		INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
-		INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:6:5-27:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\a10d38d2b2f74065f4f4261109adf45e\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\a10d38d2b2f74065f4f4261109adf45e\AndroidManifest.xml:9:5-20
+ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:6:5-27:19
 MERGED from [com.artlite:adapteredrecyclerview:1.7.4] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\76bcdad69f6ef9fdd3d60392c431f70f\AndroidManifest.xml:11:5-14:19
 MERGED from [com.artlite:adapteredrecyclerview:1.7.4] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\76bcdad69f6ef9fdd3d60392c431f70f\AndroidManifest.xml:11:5-14:19
-MERGED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-30:19
-MERGED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-30:19
+MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-30:19
+MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-30:19
 MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\190e281fa307bbb0ae50987f7a4f0446\AndroidManifest.xml:11:5-20
 MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\190e281fa307bbb0ae50987f7a4f0446\AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\8e32d17f4e072c004a0f346245aceef3\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\8e32d17f4e072c004a0f346245aceef3\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\221517fd3ce1b8caa8a108f4f48d094f\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\221517fd3ce1b8caa8a108f4f48d094f\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\57141d47365ea1ac4ad1f84c422d6c36\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\57141d47365ea1ac4ad1f84c422d6c36\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\02467c73db1f5992111422a9b018ac8b\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\02467c73db1f5992111422a9b018ac8b\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\2aa672c3777746d892639a0a22ea0935\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\2aa672c3777746d892639a0a22ea0935\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\338797e27740244618e9b24500b07de8\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\338797e27740244618e9b24500b07de8\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\c78f6efc70f9f57e57599029f848b868\AndroidManifest.xml:29:5-20
@@ -73,75 +64,69 @@ MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Artli\.grad
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\c9e527b26e72f3d4d43753b0db9f04d2\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\c9e527b26e72f3d4d43753b0db9f04d2\AndroidManifest.xml:29:5-20
 	android:supportsRtl
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:10:9-41
 	tools:ignore
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:14:9-48
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:14:9-48
 	android:roundIcon
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:13:9-40
 	android:name
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:7:9-48
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:7:9-48
 activity#com.artlite.pluginmanagerworkshop.ui.activities.SplashActivity
-ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:15:9-23:20
+ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:15:9-23:20
 	android:screenOrientation
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:17:13-49
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:17:13-49
 	android:theme
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:18:13-47
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:18:13-47
 	android:name
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:16:13-57
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:16:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:19:13-22:29
+ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:19:13-22:29
 action#android.intent.action.MAIN
-ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:21:27-74
 activity#com.artlite.pluginmanagerworkshop.ui.activities.PluginsActivity
-ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:24:9-26:52
+ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:24:9-26:52
 	android:screenOrientation
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:26:13-49
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:26:13-49
 	android:name
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:25:13-58
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml:25:13-58
 uses-sdk
-INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
-INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\a10d38d2b2f74065f4f4261109adf45e\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\a10d38d2b2f74065f4f4261109adf45e\AndroidManifest.xml:5:5-7:41
+INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
 MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.15] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\7eb0c044266716a08e00ed3ba0ba1458\AndroidManifest.xml:6:5-8:41
 MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.15] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\7eb0c044266716a08e00ed3ba0ba1458\AndroidManifest.xml:6:5-8:41
 MERGED from [com.artlite:adapteredrecyclerview:1.7.4] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\76bcdad69f6ef9fdd3d60392c431f70f\AndroidManifest.xml:7:5-9:41
 MERGED from [com.artlite:adapteredrecyclerview:1.7.4] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\76bcdad69f6ef9fdd3d60392c431f70f\AndroidManifest.xml:7:5-9:41
-MERGED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
-MERGED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
 MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\190e281fa307bbb0ae50987f7a4f0446\AndroidManifest.xml:7:5-9:41
 MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\190e281fa307bbb0ae50987f7a4f0446\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\8e32d17f4e072c004a0f346245aceef3\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\8e32d17f4e072c004a0f346245aceef3\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\221517fd3ce1b8caa8a108f4f48d094f\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\221517fd3ce1b8caa8a108f4f48d094f\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\56dcca759ec72f8c6194cfdd13af368e\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\56dcca759ec72f8c6194cfdd13af368e\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\57141d47365ea1ac4ad1f84c422d6c36\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\57141d47365ea1ac4ad1f84c422d6c36\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\02467c73db1f5992111422a9b018ac8b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\02467c73db1f5992111422a9b018ac8b\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\2aa672c3777746d892639a0a22ea0935\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\2aa672c3777746d892639a0a22ea0935\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\338797e27740244618e9b24500b07de8\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\338797e27740244618e9b24500b07de8\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\c78f6efc70f9f57e57599029f848b868\AndroidManifest.xml:21:5-23:63
@@ -150,68 +135,64 @@ MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Artli\.grad
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\4fba41c8edfa7ea36af68f3549dcd719\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\c9e527b26e72f3d4d43753b0db9f04d2\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\c9e527b26e72f3d4d43753b0db9f04d2\AndroidManifest.xml:21:5-23:58
-INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
-INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\8e32d17f4e072c004a0f346245aceef3\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\221517fd3ce1b8caa8a108f4f48d094f\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
-		ADDED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Development\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		ADDED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Development\DLCApplication\PluginManagerWorkshop\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-77
+ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-77
 	android:name
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-74
-service#com.artlite.pluginmanagerapi.services.ManagerListeningService
-ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-19:46
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-74
+service#com.artlite.pluginmanagerapi.services.DLCManagerListeningService
+ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-19:46
 	android:enabled
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-35
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-35
 	android:exported
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-36
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-36
 	tools:ignore
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-43
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-43
 	android:name
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-89
-service#com.artlite.pluginmanagerapi.services.PluginListeningService
-ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-24:46
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-92
+service#com.artlite.pluginmanagerapi.services.DLCPluginListeningService
+ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-24:46
 	android:enabled
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-35
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-35
 	android:exported
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-36
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-36
 	tools:ignore
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-43
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-43
 	android:name
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-88
-service#com.artlite.pluginmanagerapi.services.PluginActionService
-ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-29:46
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-91
+service#com.artlite.pluginmanagerapi.services.DLCPluginActionService
+ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-29:46
 	android:enabled
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-35
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-35
 	android:exported
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-36
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-36
 	tools:ignore
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-43
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-43
 	android:name
-		ADDED from [:pluginmanagerapi] F:\Development\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-85
+		ADDED from [:pluginmanagerapi] F:\Development\DLCApplication\PluginManagerWorkshop\pluginmanagerapi\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-88
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\8e32d17f4e072c004a0f346245aceef3\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\221517fd3ce1b8caa8a108f4f48d094f\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\221517fd3ce1b8caa8a108f4f48d094f\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\221517fd3ce1b8caa8a108f4f48d094f\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\56dcca759ec72f8c6194cfdd13af368e\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\56dcca759ec72f8c6194cfdd13af368e\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\57141d47365ea1ac4ad1f84c422d6c36\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\57141d47365ea1ac4ad1f84c422d6c36\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\02467c73db1f5992111422a9b018ac8b\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\02467c73db1f5992111422a9b018ac8b\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\2aa672c3777746d892639a0a22ea0935\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\2aa672c3777746d892639a0a22ea0935\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\55a64b8873e092f6ec1b12e9e02f5478\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\887e2bf222d055c9959c1ec655ed110a\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\338797e27740244618e9b24500b07de8\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\338797e27740244618e9b24500b07de8\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\c78f6efc70f9f57e57599029f848b868\AndroidManifest.xml:25:5-27:34
@@ -221,6 +202,6 @@ MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Artli\.grad
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\c9e527b26e72f3d4d43753b0db9f04d2\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\c9e527b26e72f3d4d43753b0db9f04d2\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\8e32d17f4e072c004a0f346245aceef3\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\221517fd3ce1b8caa8a108f4f48d094f\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\8e32d17f4e072c004a0f346245aceef3\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Artli\.gradle\caches\transforms-2\files-2.1\221517fd3ce1b8caa8a108f4f48d094f\AndroidManifest.xml:26:9-47

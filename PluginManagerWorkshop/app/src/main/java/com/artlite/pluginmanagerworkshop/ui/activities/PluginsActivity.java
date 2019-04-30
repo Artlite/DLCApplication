@@ -9,9 +9,9 @@ import com.artlite.adapteredrecyclerview.callbacks.OnAdapteredBaseCallback;
 import com.artlite.adapteredrecyclerview.callbacks.OnAdapteredRefreshCallback;
 import com.artlite.adapteredrecyclerview.core.ARView;
 import com.artlite.adapteredrecyclerview.events.AREvent;
-import com.artlite.pluginmanagerapi.callbacks.ApiManagerCallback;
-import com.artlite.pluginmanagerapi.managers.ApiManager;
-import com.artlite.pluginmanagerapi.models.PackageModel;
+import com.artlite.pluginmanagerapi.callbacks.DLCManagerCallback;
+import com.artlite.pluginmanagerapi.managers.DLCApiManager;
+import com.artlite.pluginmanagerapi.models.DLCPackageModel;
 import com.artlite.pluginmanagerworkshop.R;
 import com.artlite.pluginmanagerworkshop.models.PluginModel;
 
@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Class which provide to show of the available plugins
  */
-public class PluginsActivity extends AppCompatActivity {
+public class PluginsActivity extends AppCompatActivity implements DLCManagerCallback {
 
     /**
      * Instance of the {@link ARView}
@@ -52,19 +52,8 @@ public class PluginsActivity extends AppCompatActivity {
      */
     private void receivePlugins() {
         this.viewRecycle.showRefresh();
-        ApiManager.getInstance()
-                .recievePlugins(new ApiManagerCallback() {
-                    @Override
-                    public void onResult(@NonNull List<PackageModel> models) {
-                        final Iterator<PackageModel> iterator = models.listIterator();
-                        final List<PluginModel> pluginModels = new ArrayList<>();
-                        while (iterator.hasNext()) {
-                            pluginModels.add(new PluginModel(iterator.next()));
-                        }
-                        viewRecycle.set(pluginModels);
-                        viewRecycle.hideRefresh();
-                    }
-                });
+        DLCApiManager.getInstance()
+                .receivePlugins(this);
     }
 
     //==============================================================================================
@@ -130,4 +119,19 @@ public class PluginsActivity extends AppCompatActivity {
         }
     };
 
+    /**
+     * Method which provide the on result functional
+     *
+     * @param models {@link List} of the {@link DLCPackageModel}
+     */
+    @Override
+    public void onResult(@NonNull List<DLCPackageModel> models) {
+        final Iterator<DLCPackageModel> iterator = models.listIterator();
+        final List<PluginModel> pluginModels = new ArrayList<>();
+        while (iterator.hasNext()) {
+            pluginModels.add(new PluginModel(iterator.next()));
+        }
+        viewRecycle.set(pluginModels);
+        viewRecycle.hideRefresh();
+    }
 }
