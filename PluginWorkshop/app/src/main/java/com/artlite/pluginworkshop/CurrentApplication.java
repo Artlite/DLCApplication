@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.artlite.pluginmanagerapi.core.DLCPluginApplication;
 import com.artlite.pluginmanagerapi.services.DLCBaseService;
+import com.artlite.pluginmanagerapi.services.DLCPluginActionService;
 
 
 /**
@@ -35,6 +36,11 @@ public class CurrentApplication extends DLCPluginApplication {
      * {@link Integer} value of the step
      */
     private int step = 0;
+
+    /**
+     * {@link String} value of the message
+     */
+    private String message;
 
     /**
      * Instance of the {@link Runnable}
@@ -66,7 +72,7 @@ public class CurrentApplication extends DLCPluginApplication {
      */
     protected void toast() {
         Toast.makeText(getApplicationContext(),
-                "Hello, World! #" + step, Toast.LENGTH_SHORT).show();
+                this.message + "" + step, Toast.LENGTH_SHORT).show();
         step++;
     }
 
@@ -104,16 +110,22 @@ public class CurrentApplication extends DLCPluginApplication {
     /**
      * Method which provide the task executing
      *
-     * @param service instance of the {@link DLCBaseService}
+     * @param intent  instance of the {@link Intent}
+     * @param service instance of the {@link DLCPluginActionService}
      * @param handler instance of the {@link Handler}
      */
     @Override
-    public void startTask(@NonNull DLCBaseService service,
+    public void startTask(@NonNull Intent intent,
+                          @NonNull DLCBaseService service,
                           @NonNull Handler handler) {
         this.handler = handler;
         this.isNeedTask = true;
         this.step = 0;
         this.handler.post(handlerTask);
+        this.message = intent.getStringExtra("com.artlite.message");
+        if (this.message == null) {
+            this.message = "Hello, World! #";
+        }
     }
 
     /**

@@ -65,10 +65,12 @@ public abstract class DLCPluginApplication extends DLCBaseApplication {
     /**
      * Method which provide the task executing
      *
+     * @param intent  instance of the {@link Intent}
      * @param service instance of the {@link DLCPluginActionService}
      * @param handler instance of the {@link Handler}
      */
-    public abstract void startTask(@NonNull DLCBaseService service,
+    public abstract void startTask(@NonNull Intent intent,
+                                   @NonNull DLCBaseService service,
                                    @NonNull final Handler handler);
 
     /**

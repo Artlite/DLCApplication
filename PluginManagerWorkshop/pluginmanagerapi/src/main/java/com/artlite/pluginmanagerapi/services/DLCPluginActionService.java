@@ -31,7 +31,7 @@ public class DLCPluginActionService extends DLCBaseService {
                 this.stopService();
             } else {
                 DLCPluginApplication.getInstance()
-                        .startTask(this, this.handler);
+                        .startTask(intent, this, this.handler);
             }
         }
         return super.onStartCommand(intent, flags, startId);
