@@ -1,2 +1,2 @@
 include ':app', ':pluginmanagerapi'
-//project(':pluginmanagerapi').projectDir = new File('F:\\Development\\DLCApplication\\PluginManagerWorkshop\\pluginmanagerapi');
+project(':pluginmanagerapi').projectDir = new File('..\\pluginmanagerapi')

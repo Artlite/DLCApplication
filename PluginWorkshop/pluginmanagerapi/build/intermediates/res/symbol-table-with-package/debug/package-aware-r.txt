@@ -1,2 +1,0 @@
-com.artlite.pluginmanagerapi
-string app_name
