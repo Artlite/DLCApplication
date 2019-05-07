@@ -1,5 +1,6 @@
 package com.artlite.pluginmanagerworkshop.ui.recycler;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.AppCompatCheckBox;
@@ -7,7 +8,7 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import com.artlite.adapteredrecyclerview.models.ARCell;
-import com.artlite.pluginmanagerapi.managers.DLCApiManager;
+import com.artlite.pluginmanagerapi.managers.PSApiManager;
 import com.artlite.pluginmanagerworkshop.R;
 import com.artlite.pluginmanagerworkshop.models.PluginModel;
 
@@ -47,9 +48,11 @@ public class PluginRecyclerView
      *
      * @param baseObject current object
      */
+    @SuppressLint("SetTextI18n")
     @Override
     public void setUp(@NonNull PluginModel baseObject) {
-        this.labelTitle.setText(baseObject.getModel().getApplicationName());
+        this.labelTitle.setText(baseObject.getIndex() +
+                " : " + baseObject.getModel().getApplicationName());
         this.labelDescription.setText(baseObject.getModel().getPackageName());
         this.checkBox.setChecked(baseObject.getModel().isEnabled());
     }
@@ -86,9 +89,9 @@ public class PluginRecyclerView
         final PluginModel model = getObject();
         if (model != null) {
             if (isChecked) {
-                DLCApiManager.getInstance().start(model.getModel());
+                PSApiManager.getInstance().start(model.getModel());
             } else {
-                DLCApiManager.getInstance().stop(model.getModel());
+                PSApiManager.getInstance().stop(model.getModel());
             }
         }
     }

@@ -38,15 +38,15 @@
             android:screenOrientation="portrait" />
 
         <service
-            android:name="com.artlite.pluginmanagerapi.services.DLCManagerListeningService"
+            android:name="com.artlite.pluginmanagerapi.services.PSManagerListeningService"
             android:enabled="true"
             android:exported="true" />
         <service
-            android:name="com.artlite.pluginmanagerapi.services.DLCPluginListeningService"
+            android:name="com.artlite.pluginmanagerapi.services.PSPluginListeningService"
             android:enabled="true"
             android:exported="true" />
         <service
-            android:name="com.artlite.pluginmanagerapi.services.DLCPluginActionService"
+            android:name="com.artlite.pluginmanagerapi.services.PSPluginActionService"
             android:enabled="true"
             android:exported="true" />
     </application>

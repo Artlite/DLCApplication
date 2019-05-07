@@ -1,34 +1,34 @@
 package com.artlite.pluginmanagerapi.core;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.artlite.pluginmanagerapi.managers.DLCApiManager;
+import com.artlite.pluginmanagerapi.annotations.NonNull;
+import com.artlite.pluginmanagerapi.annotations.Nullable;
+import com.artlite.pluginmanagerapi.managers.PSApiManager;
 
 /**
  * Class which provide the extension for the manager application
  */
-public abstract class DLCManagerApplication extends DLCBaseApplication {
+public abstract class PSManagerApplication extends PSBaseApplication {
 
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = DLCManagerApplication.class.getSimpleName();
+    private static final String TAG = PSManagerApplication.class.getSimpleName();
 
     /**
-     * Instance of the {@link DLCManagerApplication}
+     * Instance of the {@link PSManagerApplication}
      */
-    private static DLCManagerApplication instance;
+    private static PSManagerApplication instance;
 
     /**
-     * Method which provide the getting of the instance of the {@link DLCManagerApplication}
+     * Method which provide the getting of the instance of the {@link PSManagerApplication}
      *
-     * @return instance of the {@link DLCManagerApplication}
+     * @return instance of the {@link PSManagerApplication}
      */
     @Nullable
-    public static DLCManagerApplication getInstance() {
+    public static PSManagerApplication getInstance() {
         return instance;
     }
 
@@ -50,7 +50,7 @@ public abstract class DLCManagerApplication extends DLCBaseApplication {
     @Override
     public void onTerminate() {
         Log.d(TAG, "onTerminate: ---");
-        DLCApiManager.getInstance().stopAll();
+        PSApiManager.getInstance().stopAll();
         super.onTerminate();
         Log.d(TAG, "onTerminate: ---");
     }

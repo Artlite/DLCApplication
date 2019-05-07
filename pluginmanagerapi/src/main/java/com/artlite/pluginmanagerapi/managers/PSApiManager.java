@@ -3,15 +3,15 @@ package com.artlite.pluginmanagerapi.managers;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.artlite.pluginmanagerapi.callbacks.DLCManagerCallback;
-import com.artlite.pluginmanagerapi.constants.DLCConstants;
-import com.artlite.pluginmanagerapi.core.DLCManagerApplication;
-import com.artlite.pluginmanagerapi.core.DLCPluginApplication;
-import com.artlite.pluginmanagerapi.models.DLCPackageModel;
+import com.artlite.pluginmanagerapi.annotations.NonNull;
+import com.artlite.pluginmanagerapi.annotations.Nullable;
+import com.artlite.pluginmanagerapi.callbacks.PSManagerCallback;
+import com.artlite.pluginmanagerapi.constants.PSConstants;
+import com.artlite.pluginmanagerapi.core.PSManagerApplication;
+import com.artlite.pluginmanagerapi.core.PSPluginApplication;
+import com.artlite.pluginmanagerapi.models.PSPackageModel;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,27 +24,27 @@ import java.util.Set;
 /**
  * Class which provide the api interaction
  */
-public final class DLCApiManager {
+public final class PSApiManager {
 
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = DLCApiManager.class.getSimpleName();
+    private static final String TAG = PSApiManager.class.getSimpleName();
 
     /**
-     * Instance of the {@link DLCApiManager}
+     * Instance of the {@link PSApiManager}
      */
-    private static DLCApiManager instance;
+    private static PSApiManager instance;
 
     /**
-     * Method which provide the getting of the instance of the {@link DLCApiManager}
+     * Method which provide the getting of the instance of the {@link PSApiManager}
      *
-     * @return instance of the {@link DLCApiManager}
+     * @return instance of the {@link PSApiManager}
      */
     @NonNull
-    public static DLCApiManager getInstance() {
+    public static PSApiManager getInstance() {
         if (instance == null) {
-            instance = new DLCApiManager();
+            instance = new PSApiManager();
         }
         return instance;
     }
@@ -67,21 +67,21 @@ public final class DLCApiManager {
     /**
      * Instance of the {@link Map}
      */
-    private volatile Map<String, DLCPackageModel> models = new HashMap<>();
+    private volatile Map<String, PSPackageModel> models = new HashMap<>();
 
     /**
      * Default constructor
      */
-    private DLCApiManager() {
-        Log.d(TAG, "DLCApiManager: default constructor");
+    private PSApiManager() {
+        Log.d(TAG, "PSApiManager: default constructor");
     }
 
     /**
      * Method which provide the receive the plugins
      *
-     * @param callback instance of the {@link DLCManagerCallback}
+     * @param callback instance of the {@link PSManagerCallback}
      */
-    public void receivePlugins(@Nullable DLCManagerCallback callback) {
+    public void receivePlugins(@Nullable PSManagerCallback callback) {
         Log.d(TAG, "receivePlugins: ---");
         if (callback == null) {
             Log.d(TAG, "receivePlugins: callback is null");
@@ -98,13 +98,13 @@ public final class DLCApiManager {
      * @return instance of the {@link List}
      */
     @NonNull
-    public List<DLCPackageModel> getPlugins() {
+    public List<PSPackageModel> getPlugins() {
         Log.d(TAG, "getPlugins: ---");
-        final List<DLCPackageModel> models = new ArrayList<>();
+        final List<PSPackageModel> models = new ArrayList<>();
         final Iterator<String> iterator = this.plugins.iterator();
         while (iterator.hasNext()) {
             final String packageName = iterator.next();
-            final DLCPackageModel packageModel = this.models.get(packageName);
+            final PSPackageModel packageModel = this.models.get(packageName);
             if (packageModel != null) {
                 packageModel.setEnabled(this.started.contains(packageModel.getPackageName()));
                 models.add(packageModel);
@@ -120,15 +120,16 @@ public final class DLCApiManager {
      */
     private void update() {
         Log.d(TAG, "update: ---");
-        final List<DLCPackageModel> models = DLCApplicationManager
+        final List<PSPackageModel> models = PSApplicationManager
                 .getInstance().getInstalledApplications();
         Log.d(TAG, "update: installed applications " + models);
-        final Iterator<DLCPackageModel> iterator = models.listIterator();
+        final Iterator<PSPackageModel> iterator = models.listIterator();
         final String managerName = this.getManagerPackage();
         Log.d(TAG, "update: manager name " + managerName);
         this.packages.clear();
+        this.models.clear();
         while (iterator.hasNext()) {
-            final DLCPackageModel model = iterator.next();
+            final PSPackageModel model = iterator.next();
             Log.d(TAG, "update: model " + model);
             try {
                 this.packages.add(model.getPackageName());
@@ -160,8 +161,8 @@ public final class DLCApiManager {
             Log.d(TAG, "ping: package manager " + packageName);
             try {
                 final Intent intent = new Intent();
-                intent.setClassName(packageName, DLCConstants.K_PLUGIN_LISTEN_SERVICE);
-                intent.putExtra(DLCConstants.K_KEY_PACKAGE, name);
+                intent.setClassName(packageName, PSConstants.K_PLUGIN_LISTEN_SERVICE);
+                intent.putExtra(PSConstants.K_KEY_PACKAGE, name);
                 Log.d(TAG, "ping: pinging intent " + intent);
                 this.startService(intent);
             } catch (Exception ex) {
@@ -183,10 +184,10 @@ public final class DLCApiManager {
             String name = this.getPluginPackage();
             Log.d(TAG, "answer: plugin name " + name);
             final Intent intent = new Intent();
-            intent.setClassName(managerPackage, DLCConstants.K_MANAGER_LISTEN_SERVICE);
-            intent.putExtra(DLCConstants.K_KEY_PACKAGE, name);
-            if (DLCPluginApplication.getInstance() != null) {
-                DLCPluginApplication.getInstance().pluginWillAnswer(intent);
+            intent.setClassName(managerPackage, PSConstants.K_MANAGER_LISTEN_SERVICE);
+            intent.putExtra(PSConstants.K_KEY_PACKAGE, name);
+            if (PSPluginApplication.getInstance() != null) {
+                PSPluginApplication.getInstance().pluginWillAnswer(intent);
             }
             Log.d(TAG, "answer: starting intent " + intent);
             this.startService(intent);
@@ -202,7 +203,7 @@ public final class DLCApiManager {
      * @param packageName {@link String} value of the package name
      */
     public synchronized void add(@Nullable String packageName) {
-        Log.d(TAG, "add: package was recieved -> " + packageName);
+        Log.d(TAG, "add: package was received -> " + packageName);
         this.plugins.add(packageName);
     }
 
@@ -217,12 +218,12 @@ public final class DLCApiManager {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 Log.d(TAG, "startService: Build.VERSION.SDK_INT " +
                         ">= Build.VERSION_CODES.O");
-                DLCContextManager.getInstance()
+                PSContextManager.getInstance()
                         .getContext().startForegroundService(intent);
             } else {
                 Log.d(TAG, "startService: Build.VERSION.SDK_INT " +
                         "< Build.VERSION_CODES.O");
-                DLCContextManager.getInstance()
+                PSContextManager.getInstance()
                         .getContext().startService(intent);
             }
         } catch (Exception ex) {
@@ -232,16 +233,16 @@ public final class DLCApiManager {
     }
 
     /**
-     * Method which provide the start of the action for the {@link DLCPackageModel}
+     * Method which provide the start of the action for the {@link PSPackageModel}
      *
-     * @param model instance of the {@link DLCPackageModel}
+     * @param model instance of the {@link PSPackageModel}
      */
-    public boolean start(@Nullable DLCPackageModel model) {
+    public boolean start(@Nullable PSPackageModel model) {
         return this.start((model != null) ? model.getPackageName() : null);
     }
 
     /**
-     * Method which provide the start of the action for the {@link DLCPackageModel}
+     * Method which provide the start of the action for the {@link PSPackageModel}
      *
      * @param model instance of the {@link String}
      */
@@ -251,11 +252,11 @@ public final class DLCApiManager {
         try {
             final Intent intent = new Intent();
             intent.setClassName(model,
-                    DLCConstants.K_PLUGIN_ACTION_SERVICE);
-            intent.putExtra(DLCConstants.K_KEY_NEED_STOP, false);
+                    PSConstants.K_PLUGIN_ACTION_SERVICE);
+            intent.putExtra(PSConstants.K_KEY_NEED_STOP, false);
             this.started.add(model);
-            if (DLCManagerApplication.getInstance() != null) {
-                DLCManagerApplication.getInstance()
+            if (PSManagerApplication.getInstance() != null) {
+                PSManagerApplication.getInstance()
                         .pluginWillStart(model, intent);
             }
             Log.d(TAG, "start: starting intent " + intent);
@@ -271,16 +272,16 @@ public final class DLCApiManager {
     }
 
     /**
-     * Method which provide the start of the action for the {@link DLCPackageModel}
+     * Method which provide the start of the action for the {@link PSPackageModel}
      *
-     * @param model instance of the {@link DLCPackageModel}
+     * @param model instance of the {@link PSPackageModel}
      */
-    public boolean stop(@Nullable DLCPackageModel model) {
+    public boolean stop(@Nullable PSPackageModel model) {
         return this.stop((model != null) ? model.getPackageName() : null);
     }
 
     /**
-     * Method which provide the start of the action for the {@link DLCPackageModel}
+     * Method which provide the start of the action for the {@link PSPackageModel}
      *
      * @param model instance of the {@link String}
      */
@@ -290,11 +291,11 @@ public final class DLCApiManager {
         try {
             final Intent intent = new Intent();
             intent.setClassName(model,
-                    DLCConstants.K_PLUGIN_ACTION_SERVICE);
-            intent.putExtra(DLCConstants.K_KEY_NEED_STOP, true);
+                    PSConstants.K_PLUGIN_ACTION_SERVICE);
+            intent.putExtra(PSConstants.K_KEY_NEED_STOP, true);
             this.started.remove(model);
-            if (DLCManagerApplication.getInstance() != null) {
-                DLCManagerApplication.getInstance()
+            if (PSManagerApplication.getInstance() != null) {
+                PSManagerApplication.getInstance()
                         .pluginWillStop(model, intent);
             }
             Log.d(TAG, "stop: starting intent " + intent);
@@ -331,7 +332,7 @@ public final class DLCApiManager {
     @Nullable
     private String getPluginPackage() {
         try {
-            return DLCPluginApplication.getInstance().getPackageName();
+            return PSPluginApplication.getInstance().getPackageName();
         } catch (Exception ex) {
             Log.e(TAG, "getPluginPackage: ", ex);
         }
@@ -346,7 +347,7 @@ public final class DLCApiManager {
     @Nullable
     private String getManagerPackage() {
         try {
-            return DLCManagerApplication.getInstance().getPackageName();
+            return PSManagerApplication.getInstance().getPackageName();
         } catch (Exception ex) {
             Log.e(TAG, "getPluginPackage: ", ex);
         }
@@ -357,7 +358,7 @@ public final class DLCApiManager {
      * Method which provide the
      */
     private static class PluginReceiver extends AsyncTask<Void,
-            Void, List<DLCPackageModel>> {
+            Void, List<PSPackageModel>> {
 
         /**
          * {@link String} constant of the TAG
@@ -365,16 +366,16 @@ public final class DLCApiManager {
         private static final String TAG = PluginReceiver.class.getSimpleName();
 
         /**
-         * Instance of the {@link DLCManagerCallback}
+         * Instance of the {@link PSManagerCallback}
          */
-        private final DLCManagerCallback callback;
+        private final PSManagerCallback callback;
 
         /**
          * Constructor which provide to create the {@link PluginReceiver} with parameters
          *
-         * @param callback instance of the {@link DLCManagerCallback}
+         * @param callback instance of the {@link PSManagerCallback}
          */
-        private PluginReceiver(@Nullable DLCManagerCallback callback) {
+        private PluginReceiver(@Nullable PSManagerCallback callback) {
             this.callback = callback;
         }
 
@@ -387,25 +388,25 @@ public final class DLCApiManager {
          * @return A result, defined by the subclass of this task.
          */
         @Override
-        protected List<DLCPackageModel> doInBackground(Void... voids) {
-            final List<DLCPackageModel> models = new ArrayList<>();
-            DLCApiManager.getInstance().ping();
+        protected List<PSPackageModel> doInBackground(Void... voids) {
+            final List<PSPackageModel> models = new ArrayList<>();
+            PSApiManager.getInstance().ping();
             try {
-                Thread.sleep(2000);
+                Thread.sleep(1000);
             } catch (InterruptedException ex) {
                 Log.e(TAG, "doInBackground: ", ex);
             }
-            models.addAll(DLCApiManager.getInstance().getPlugins());
+            models.addAll(PSApiManager.getInstance().getPlugins());
             return models;
         }
 
         /**
          * Method which provide the port result functionality
          *
-         * @param list {@link List} of the {@link DLCPackageModel}
+         * @param list {@link List} of the {@link PSPackageModel}
          */
         @Override
-        protected void onPostExecute(List<DLCPackageModel> list) {
+        protected void onPostExecute(List<PSPackageModel> list) {
             super.onPostExecute(list);
             if (this.callback != null) {
                 this.callback.onResult(list);

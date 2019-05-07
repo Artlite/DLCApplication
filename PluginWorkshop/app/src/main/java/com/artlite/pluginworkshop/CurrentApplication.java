@@ -4,18 +4,17 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
 import android.os.Handler;
-import android.support.annotation.NonNull;
 import android.widget.Toast;
 
-import com.artlite.pluginmanagerapi.core.DLCPluginApplication;
-import com.artlite.pluginmanagerapi.services.DLCBaseService;
-import com.artlite.pluginmanagerapi.services.DLCPluginActionService;
+import com.artlite.pluginmanagerapi.annotations.NonNull;
+import com.artlite.pluginmanagerapi.core.PSPluginApplication;
+import com.artlite.pluginmanagerapi.services.PSBaseService;
 
 
 /**
  * Instance of the current application
  */
-public class CurrentApplication extends DLCPluginApplication {
+public class CurrentApplication extends PSPluginApplication {
 
     /**
      * {@link Integer}value of the interval
@@ -111,13 +110,19 @@ public class CurrentApplication extends DLCPluginApplication {
      * Method which provide the task executing
      *
      * @param intent  instance of the {@link Intent}
-     * @param service instance of the {@link DLCPluginActionService}
+     * @param service instance of the {@link PSBaseService}
      * @param handler instance of the {@link Handler}
      */
     @Override
     public void startTask(@NonNull Intent intent,
-                          @NonNull DLCBaseService service,
+                          @NonNull PSBaseService service,
                           @NonNull Handler handler) {
+        final String packageName = getPackageName();
+        if (packageName.equalsIgnoreCase("com.artlite.pluginworkshop11")) {
+            this.startActivity(PluginActivity.class);
+            service.stopService();
+            return;
+        }
         this.handler = handler;
         this.isNeedTask = true;
         this.step = 0;
@@ -131,11 +136,11 @@ public class CurrentApplication extends DLCPluginApplication {
     /**
      * Method which provide the task executing
      *
-     * @param service instance of the {@link DLCBaseService}
+     * @param service instance of the {@link PSBaseService}
      * @param handler instance of the {@link Handler}
      */
     @Override
-    public void endTask(@NonNull DLCBaseService service,
+    public void endTask(@NonNull PSBaseService service,
                         @NonNull Handler handler) {
         this.isNeedTask = false;
     }

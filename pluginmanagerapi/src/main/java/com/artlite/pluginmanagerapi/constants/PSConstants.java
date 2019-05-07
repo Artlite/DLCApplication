@@ -3,25 +3,25 @@ package com.artlite.pluginmanagerapi.constants;
 /**
  * Class which provide the keeping of the application constants
  */
-public final class DLCConstants {
+public final class PSConstants {
 
     /**
      * {@link String} value of the manager service listening path
      */
     public static final String K_MANAGER_LISTEN_SERVICE
-            = "com.artlite.pluginmanagerapi.services.DLCManagerListeningService";
+            = "com.artlite.pluginmanagerapi.services.PSManagerListeningService";
 
     /**
      * {@link String} value of the manager service listening path
      */
     public static final String K_PLUGIN_LISTEN_SERVICE
-            = "com.artlite.pluginmanagerapi.services.DLCPluginListeningService";
+            = "com.artlite.pluginmanagerapi.services.PSPluginListeningService";
 
     /**
      * {@link String} value of the manager service listening path
      */
     public static final String K_PLUGIN_ACTION_SERVICE
-            = "com.artlite.pluginmanagerapi.services.DLCPluginActionService";
+            = "com.artlite.pluginmanagerapi.services.PSPluginActionService";
 
     /**
      * {@link String} value of the key for the plugin model

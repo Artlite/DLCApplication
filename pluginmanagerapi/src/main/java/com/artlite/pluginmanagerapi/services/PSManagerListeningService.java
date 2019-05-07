@@ -4,16 +4,16 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
-import com.artlite.pluginmanagerapi.constants.DLCConstants;
-import com.artlite.pluginmanagerapi.core.DLCManagerApplication;
-import com.artlite.pluginmanagerapi.managers.DLCApiManager;
+import com.artlite.pluginmanagerapi.constants.PSConstants;
+import com.artlite.pluginmanagerapi.core.PSManagerApplication;
+import com.artlite.pluginmanagerapi.managers.PSApiManager;
 
-public class DLCManagerListeningService extends DLCBaseService {
+public class PSManagerListeningService extends PSBaseService {
 
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = DLCManagerListeningService.class.getSimpleName();
+    private static final String TAG = PSManagerListeningService.class.getSimpleName();
 
     /**
      * Method which provide the on start service functionality
@@ -25,10 +25,10 @@ public class DLCManagerListeningService extends DLCBaseService {
      */
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        if (DLCManagerApplication.getInstance() != null) {
+        if (PSManagerApplication.getInstance() != null) {
             try {
-                final String name = intent.getStringExtra(DLCConstants.K_KEY_PACKAGE);
-                DLCApiManager.getInstance().add(name);
+                final String name = intent.getStringExtra(PSConstants.K_KEY_PACKAGE);
+                PSApiManager.getInstance().add(name);
             } catch (Exception ex) {
                 Log.e(TAG, "onStartCommand: ", ex);
             }

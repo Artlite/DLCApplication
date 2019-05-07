@@ -2,34 +2,34 @@ package com.artlite.pluginmanagerapi.core;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.artlite.pluginmanagerapi.services.DLCBaseService;
-import com.artlite.pluginmanagerapi.services.DLCPluginActionService;
+import com.artlite.pluginmanagerapi.annotations.NonNull;
+import com.artlite.pluginmanagerapi.annotations.Nullable;
+import com.artlite.pluginmanagerapi.services.PSBaseService;
+import com.artlite.pluginmanagerapi.services.PSPluginActionService;
 
 /**
  * Class which provide the application for the plugin
  */
-public abstract class DLCPluginApplication extends DLCBaseApplication {
+public abstract class PSPluginApplication extends PSBaseApplication {
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = DLCPluginApplication.class.getSimpleName();
+    private static final String TAG = PSPluginApplication.class.getSimpleName();
 
     /**
-     * Instance of the {@link DLCPluginApplication}
+     * Instance of the {@link PSPluginApplication}
      */
-    private static DLCPluginApplication instance;
+    private static PSPluginApplication instance;
 
     /**
-     * Method which provide the getting of the instance of the {@link DLCPluginApplication}
+     * Method which provide the getting of the instance of the {@link PSPluginApplication}
      *
-     * @return instance of the {@link DLCManagerApplication}
+     * @return instance of the {@link PSManagerApplication}
      */
     @Nullable
-    public static DLCPluginApplication getInstance() {
+    public static PSPluginApplication getInstance() {
         return instance;
     }
 
@@ -66,20 +66,20 @@ public abstract class DLCPluginApplication extends DLCBaseApplication {
      * Method which provide the task executing
      *
      * @param intent  instance of the {@link Intent}
-     * @param service instance of the {@link DLCPluginActionService}
+     * @param service instance of the {@link PSPluginActionService}
      * @param handler instance of the {@link Handler}
      */
     public abstract void startTask(@NonNull Intent intent,
-                                   @NonNull DLCBaseService service,
+                                   @NonNull PSBaseService service,
                                    @NonNull final Handler handler);
 
     /**
      * Method which provide the task executing
      *
-     * @param service instance of the {@link DLCPluginActionService}
+     * @param service instance of the {@link PSPluginActionService}
      * @param handler instance of the {@link Handler}
      */
-    public abstract void endTask(@NonNull DLCBaseService service,
+    public abstract void endTask(@NonNull PSBaseService service,
                                  @NonNull final Handler handler);
 
 }

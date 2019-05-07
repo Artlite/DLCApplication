@@ -1,69 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="481f83ef-6b8f-484e-b8f0-ca129b2f3042" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/artlite/pluginworkshop/PluginActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/annotations/NonNull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/annotations/Nullable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginmanagerworkshop/core/CurrentApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginmanagerworkshop/core/CurrentApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginmanagerworkshop/models/PluginModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginmanagerworkshop/models/PluginModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginmanagerworkshop/ui/activities/PluginsActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginmanagerworkshop/ui/activities/PluginsActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginmanagerworkshop/ui/recycler/PluginRecyclerView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginmanagerworkshop/ui/recycler/PluginRecyclerView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginmanagerworkshop/core/CurrentApplication.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginmanagerworkshop/core/CurrentApplication.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginmanagerworkshop/models/PluginModel.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginmanagerworkshop/models/PluginModel.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginmanagerworkshop/ui/activities/PluginsActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginmanagerworkshop/ui/activities/PluginsActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginmanagerworkshop/ui/recycler/PluginRecyclerView.dex" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginmanagerworkshop/ui/recycler/PluginRecyclerView.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/build/intermediates/packaged-classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/build/intermediates/packaged-classes/debug/classes.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/build/outputs/aar/pluginmanagerapi-debug.aar" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/build/outputs/aar/pluginmanagerapi-debug.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/src/main/java/com/artlite/pluginmanagerworkshop/core/CurrentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/src/main/java/com/artlite/pluginmanagerworkshop/core/CurrentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/src/main/java/com/artlite/pluginmanagerworkshop/models/PluginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/src/main/java/com/artlite/pluginmanagerworkshop/models/PluginModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/src/main/java/com/artlite/pluginmanagerworkshop/ui/activities/PluginsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/src/main/java/com/artlite/pluginmanagerworkshop/ui/activities/PluginsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PluginManagerWorkshop/app/src/main/java/com/artlite/pluginmanagerworkshop/ui/recycler/PluginRecyclerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PluginManagerWorkshop/app/src/main/java/com/artlite/pluginmanagerworkshop/ui/recycler/PluginRecyclerView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_25_3_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PluginWorkshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PluginWorkshop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/artlite/pluginmanagerapi/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/artlite/pluginmanagerapi/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/artlite/pluginworkshop/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/artlite/pluginworkshop/R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/artlite/pluginworkshop/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/artlite/pluginworkshop/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/external_libs_dex/debug/mergeExtDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/external_libs_dex/debug/mergeExtDexDebug/out/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/i_WOvvOvxUziYuRVL2DVI_Pd6ys=" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/i_WOvvOvxUziYuRVL2DVI_Pd6ys=" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_app_manifest/debug/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/instant_run_merged_manifests/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/instant_run_merged_manifests/debug/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginmanagerapi/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginmanagerapi/R$string.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/BuildConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/BuildConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/CurrentApplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/CurrentApplication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/CurrentApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/CurrentApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/R$color.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/R$color.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/R$drawable.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/R$drawable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/R$mipmap.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/R$mipmap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/R$string.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/R$string.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/artlite/pluginworkshop/R.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/output.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginmanagerapi/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginmanagerapi/R$string.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/BuildConfig.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/BuildConfig.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/CurrentApplication$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/CurrentApplication$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/CurrentApplication.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/CurrentApplication.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/R$color.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/R$color.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/R$drawable.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/R$drawable.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/R$mipmap.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/R$mipmap.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/R$string.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/R$string.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/R.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/artlite/pluginworkshop/R.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJniLibs/debug/__content__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pluginmanagerapi/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/pluginmanagerapi/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/generateDebugRFile/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pluginmanagerapi/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/pluginmanagerapi/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/artlite/pluginworkshop/CurrentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/artlite/pluginworkshop/CurrentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/DLCApplication-pluginmanagerapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/DLCApplication-pluginmanagerapi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/callbacks/DLCManagerCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/callbacks/PSManagerCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/constants/DLCConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/core/DLCBaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/core/PSBaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/core/DLCManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/core/PSManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/core/DLCPluginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/core/PSPluginApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/helpers/DLCApplicationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/helpers/PSApplicationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/managers/DLCApiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/managers/PSApiManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/managers/DLCApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/managers/PSApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/managers/DLCContextManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/managers/PSContextManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/models/DLCPackageModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/models/PSPackageModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/DLCBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/PSBaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/DLCManagerListeningService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/DLCPluginActionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/PSPluginActionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/DLCPluginListeningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/PSPluginListeningService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +151,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../PluginManagerWorkshop">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
@@ -85,29 +167,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artlite/pluginworkshop/CurrentApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2260">
-              <caret line="124" column="65" selection-start-line="124" selection-start-column="65" selection-end-line="124" selection-end-column="65" />
+            <state relative-caret-position="279">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
+              <folding>
+                <element signature="e#2503#2504#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/core/PSPluginApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+            <state relative-caret-position="-700">
+              <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/core/PSBaseApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+              <folding>
+                <element signature="e#1797#1798#0" expanded="true" />
+                <element signature="e#1847#1848#0" expanded="true" />
+                <element signature="e#1704#1705#0" expanded="true" />
+                <element signature="e#1740#1741#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artlite/pluginworkshop/PluginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,13 +227,16 @@
         <option value="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/DLCPluginListeningService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/artlite/pluginworkshop/CurrentApplication.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/../pluginmanagerapi/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/artlite/pluginworkshop/PluginActivity.java" />
+        <option value="$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/core/PSBaseApplication.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/artlite/pluginworkshop/CurrentApplication.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -143,8 +249,6 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -165,12 +269,40 @@
             </path>
             <path>
               <item name="PluginWorkshop" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="PluginWorkshop" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="PluginWorkshop" type="1abcf292:AndroidViewProjectNode" />
+              <item name="DLCApplication-pluginmanagerapi" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="PluginWorkshop" type="1abcf292:AndroidViewProjectNode" />
+              <item name="DLCApplication-pluginmanagerapi" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="PluginWorkshop" type="1abcf292:AndroidViewProjectNode" />
+              <item name="DLCApplication-pluginmanagerapi" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="pluginmanagerapi" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PluginWorkshop" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,6 +310,14 @@
     <property name="device.picker.selection" value="PL2GAR9812401951" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="com.artlite.pluginworkshop" />
+    </key>
+    <key name="android.template.parentActivityClass">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -266,8 +406,18 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3295302" />
@@ -280,14 +430,14 @@
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49932885" weight="0.3045326" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -361,45 +511,106 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/DLCPluginListeningService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/build.gradle">
+    <entry file="file://$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/src/main/AndroidManifest.xml" />
+    <entry file="file://$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/DLCPluginListeningService.java" />
+    <entry file="file://$PROJECT_DIR$/../PluginManagerWorkshop/pluginmanagerapi/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/pluginmanagerapi/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artlite/pluginworkshop/CurrentApplication.java">
+    <entry file="file://$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/callbacks/PSManagerCallback.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2260">
-          <caret line="124" column="65" selection-start-line="124" selection-start-column="65" selection-end-line="124" selection-end-column="65" />
+        <state relative-caret-position="140">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pluginmanagerapi/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/PSManagerListeningService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/PSPluginActionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/services/PSPluginListeningService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_plugin.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pluginmanagerapi/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artlite/pluginworkshop/PluginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/core/PSBaseApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+          <folding>
+            <element signature="e#1797#1798#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="e#1704#1705#0" expanded="true" />
+            <element signature="e#1740#1741#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pluginmanagerapi/src/main/java/com/artlite/pluginmanagerapi/core/PSPluginApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-700">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/artlite/pluginworkshop/CurrentApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="e#2503#2504#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -3,15 +3,15 @@ package com.artlite.pluginmanagerapi.services;
 import android.content.Intent;
 import android.os.IBinder;
 
-import com.artlite.pluginmanagerapi.constants.DLCConstants;
-import com.artlite.pluginmanagerapi.core.DLCPluginApplication;
+import com.artlite.pluginmanagerapi.constants.PSConstants;
+import com.artlite.pluginmanagerapi.core.PSPluginApplication;
 
-public class DLCPluginActionService extends DLCBaseService {
+public class PSPluginActionService extends PSBaseService {
 
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = DLCPluginActionService.class.getSimpleName();
+    private static final String TAG = PSPluginActionService.class.getSimpleName();
 
     /**
      * Method which provide the on start service functionality
@@ -23,14 +23,14 @@ public class DLCPluginActionService extends DLCBaseService {
      */
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        if (DLCPluginApplication.getInstance() != null) {
+        if (PSPluginApplication.getInstance() != null) {
             boolean isNeedStop = intent
-                    .getBooleanExtra(DLCConstants.K_KEY_NEED_STOP,
+                    .getBooleanExtra(PSConstants.K_KEY_NEED_STOP,
                             true);
             if (isNeedStop) {
                 this.stopService();
             } else {
-                DLCPluginApplication.getInstance()
+                PSPluginApplication.getInstance()
                         .startTask(intent, this, this.handler);
             }
         }

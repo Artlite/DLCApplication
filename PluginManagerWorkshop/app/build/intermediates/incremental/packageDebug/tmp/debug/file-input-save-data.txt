@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Apr 30 21:03:42 EEST 2019
+#Wed May 08 02:15:27 EEST 2019
 2.base=F\:\\Development\\DLCApplication\\PluginManagerWorkshop\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 5.set=NATIVE_RESOURCE
 0.path=lib/arm64-v8a/libpl_droidsonroids_gif.so

@@ -3,12 +3,12 @@ package com.artlite.pluginmanagerworkshop.core;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 
-import com.artlite.pluginmanagerapi.core.DLCManagerApplication;
+import com.artlite.pluginmanagerapi.core.PSManagerApplication;
 
 /**
  * Class which provide the extension for the application
  */
-public class CurrentApplication extends DLCManagerApplication {
+public class CurrentApplication extends PSManagerApplication {
 
     /**
      * Method which provide the action when the application was created

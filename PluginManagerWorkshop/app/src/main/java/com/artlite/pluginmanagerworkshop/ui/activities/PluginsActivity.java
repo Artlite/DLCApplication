@@ -9,9 +9,9 @@ import com.artlite.adapteredrecyclerview.callbacks.OnAdapteredBaseCallback;
 import com.artlite.adapteredrecyclerview.callbacks.OnAdapteredRefreshCallback;
 import com.artlite.adapteredrecyclerview.core.ARView;
 import com.artlite.adapteredrecyclerview.events.AREvent;
-import com.artlite.pluginmanagerapi.callbacks.DLCManagerCallback;
-import com.artlite.pluginmanagerapi.managers.DLCApiManager;
-import com.artlite.pluginmanagerapi.models.DLCPackageModel;
+import com.artlite.pluginmanagerapi.callbacks.PSManagerCallback;
+import com.artlite.pluginmanagerapi.managers.PSApiManager;
+import com.artlite.pluginmanagerapi.models.PSPackageModel;
 import com.artlite.pluginmanagerworkshop.R;
 import com.artlite.pluginmanagerworkshop.models.PluginModel;
 
@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Class which provide to show of the available plugins
  */
-public class PluginsActivity extends AppCompatActivity implements DLCManagerCallback {
+public class PluginsActivity extends AppCompatActivity implements PSManagerCallback {
 
     /**
      * Instance of the {@link ARView}
@@ -52,7 +52,7 @@ public class PluginsActivity extends AppCompatActivity implements DLCManagerCall
      */
     private void receivePlugins() {
         this.viewRecycle.showRefresh();
-        DLCApiManager.getInstance()
+        PSApiManager.getInstance()
                 .receivePlugins(this);
     }
 
@@ -122,11 +122,11 @@ public class PluginsActivity extends AppCompatActivity implements DLCManagerCall
     /**
      * Method which provide the on result functional
      *
-     * @param models {@link List} of the {@link DLCPackageModel}
+     * @param models {@link List} of the {@link PSPackageModel}
      */
     @Override
-    public void onResult(@NonNull List<DLCPackageModel> models) {
-        final Iterator<DLCPackageModel> iterator = models.listIterator();
+    public void onResult(@NonNull List<PSPackageModel> models) {
+        final Iterator<PSPackageModel> iterator = models.listIterator();
         final List<PluginModel> pluginModels = new ArrayList<>();
         while (iterator.hasNext()) {
             pluginModels.add(new PluginModel(iterator.next()));

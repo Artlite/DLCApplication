@@ -6,26 +6,26 @@ import android.support.annotation.NonNull;
 
 import com.artlite.adapteredrecyclerview.models.ARCell;
 import com.artlite.adapteredrecyclerview.models.ARObject;
-import com.artlite.pluginmanagerapi.models.DLCPackageModel;
+import com.artlite.pluginmanagerapi.models.PSPackageModel;
 import com.artlite.pluginmanagerworkshop.ui.recycler.PluginRecyclerView;
 
 /**
- * Class which provide the object for the view for the {@link DLCPackageModel}
+ * Class which provide the object for the view for the {@link PSPackageModel}
  */
 @SuppressLint("ParcelCreator")
 public class PluginModel extends ARObject {
 
     /**
-     * Instance of the {@link DLCPackageModel}
+     * Instance of the {@link PSPackageModel}
      */
-    protected final DLCPackageModel model;
+    protected final PSPackageModel model;
 
     /**
-     * Method which provide to create the {@link PluginModel} from {@link DLCPackageModel}
+     * Method which provide to create the {@link PluginModel} from {@link PSPackageModel}
      *
-     * @param model instance of the {@link DLCPackageModel}
+     * @param model instance of the {@link PSPackageModel}
      */
-    public PluginModel(@NonNull DLCPackageModel model) {
+    public PluginModel(@NonNull PSPackageModel model) {
         this.model = model;
     }
 
@@ -41,11 +41,11 @@ public class PluginModel extends ARObject {
     }
 
     /**
-     * Method which provide the getting of the {@link DLCPackageModel}
+     * Method which provide the getting of the {@link PSPackageModel}
      *
-     * @return instance of the {@link DLCPackageModel}
+     * @return instance of the {@link PSPackageModel}
      */
-    public DLCPackageModel getModel() {
+    public PSPackageModel getModel() {
         return model;
     }
 }

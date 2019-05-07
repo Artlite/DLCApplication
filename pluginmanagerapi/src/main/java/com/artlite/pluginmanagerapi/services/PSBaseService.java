@@ -6,22 +6,21 @@ import android.app.NotificationManager;
 import android.app.Service;
 import android.os.Build;
 import android.os.Handler;
-import android.support.annotation.RequiresApi;
 import android.util.Log;
 
-import com.artlite.pluginmanagerapi.core.DLCPluginApplication;
+import com.artlite.pluginmanagerapi.core.PSPluginApplication;
 
 import java.util.UUID;
 
 /**
  * Class which provide the base service
  */
-public abstract class DLCBaseService extends Service {
+public abstract class PSBaseService extends Service {
 
     /**
      * {@link String} constant of the TAG value
      */
-    private static final String TAG = DLCBaseService.class.getSimpleName();
+    private static final String TAG = PSBaseService.class.getSimpleName();
 
     /**
      * {@link String} constant of the channel id
@@ -47,7 +46,6 @@ public abstract class DLCBaseService extends Service {
     /**
      * Method which provide to applying of the android oreo fix
      */
-    @RequiresApi(api = Build.VERSION_CODES.O)
     private void applyOreoFix() {
         // Create the NotificationChannel, but only on API 26+ because
         // the NotificationChannel class is new and not in the support library
@@ -62,13 +60,16 @@ public abstract class DLCBaseService extends Service {
             NotificationManager notificationManager = getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);
         }
-        Notification notification = new Notification.Builder(this)
-                .setOngoing(true)
-                .setChannelId(CHANNEL_ID)
-                .setContentTitle("App is running in background")
-                .setPriority(NotificationManager.IMPORTANCE_NONE)
-                .setCategory(Notification.CATEGORY_SERVICE)
-                .build();
+        Notification notification = null;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            notification = new Notification.Builder(this)
+                    .setOngoing(true)
+                    .setChannelId(CHANNEL_ID)
+                    .setContentTitle("App is running in background")
+                    .setPriority(NotificationManager.IMPORTANCE_NONE)
+                    .setCategory(Notification.CATEGORY_SERVICE)
+                    .build();
+        }
         this.startForeground(101, notification);
     }
 
@@ -76,8 +77,8 @@ public abstract class DLCBaseService extends Service {
      * Method which provide the stop service functional
      */
     public void stopService() {
-        if (DLCPluginApplication.getInstance() != null) {
-            DLCPluginApplication.getInstance()
+        if (PSPluginApplication.getInstance() != null) {
+            PSPluginApplication.getInstance()
                     .endTask(this, this.handler);
         }
         try {

@@ -5,11 +5,11 @@ import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.artlite.pluginmanagerapi.models.DLCPackageModel;
+import com.artlite.pluginmanagerapi.annotations.NonNull;
+import com.artlite.pluginmanagerapi.annotations.Nullable;
+import com.artlite.pluginmanagerapi.models.PSPackageModel;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -19,22 +19,22 @@ import java.util.List;
  * Class which provide the additional functionality which provide to get information
  * about the installed applications
  */
-public final class DLCApplicationHelper {
+public final class PSApplicationHelper {
 
     /**
      * {@link String} constant of the TAG
      */
-    private static final String TAG = DLCApplicationHelper.class.getSimpleName();
+    private static final String TAG = PSApplicationHelper.class.getSimpleName();
 
     /**
      * Method which provide the getting of the list of the installed applications
      *
-     * @return list of the {@link DLCPackageModel}
+     * @return list of the {@link PSPackageModel}
      */
     @NonNull
-    public static List<DLCPackageModel> getInstalledApplications(@Nullable final Context context) {
+    public static List<PSPackageModel> getInstalledApplications(@Nullable final Context context) {
         Log.d(TAG, "getInstalledApplications: ---");
-        List<DLCPackageModel> models = new ArrayList<>();
+        List<PSPackageModel> models = new ArrayList<>();
         if (context != null) {
             final PackageManager packageManager = context.getPackageManager();
             List<PackageInfo> packs = packageManager.getInstalledPackages(0);
@@ -45,7 +45,7 @@ public final class DLCApplicationHelper {
                         | ApplicationInfo.FLAG_UPDATED_SYSTEM_APP;
                 if ((packageInfo.applicationInfo.flags & mask) == 0) {
                     try {
-                        DLCPackageModel model = new DLCPackageModel();
+                        PSPackageModel model = new PSPackageModel();
                         model.setApplicationName(packageInfo.applicationInfo
                                 .loadLabel(packageManager).toString());
                         model.setPackageName(packageInfo.packageName);
