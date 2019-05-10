@@ -4,11 +4,15 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.Service;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Handler;
 import android.util.Log;
 
+import com.artlite.pluginmanagerapi.annotations.Nullable;
+import com.artlite.pluginmanagerapi.constants.PSConstants;
 import com.artlite.pluginmanagerapi.core.PSPluginApplication;
+import com.artlite.pluginmanagerapi.helpers.PSCryptHelper;
 
 import java.util.UUID;
 
@@ -87,6 +91,53 @@ public abstract class PSBaseService extends Service {
         } catch (Exception ex) {
             Log.e(TAG, "stopService: ", ex);
         }
+    }
+
+    /**
+     * Method which provide the crypt {@link String}
+     *
+     * @param value {@link String} value of the content
+     * @param key   {@link String} value of the key
+     * @return {@link String} value of the crypted value
+     */
+    @Nullable
+    protected String crypt(@Nullable String value,
+                           @Nullable String key) {
+        try {
+            if (key.length() < PSConstants.K_CRYPT_KEY_MIN_LENGHT) {
+                throw new Exception("Secret for the application should " +
+                        "be more that " + (PSConstants.K_CRYPT_KEY_MIN_LENGHT - 1) + " symbols");
+            }
+            return PSCryptHelper.encrypt(value, key);
+        } catch (Exception ex) {
+            Log.e(TAG, "crypt: ", ex);
+        }
+        return null;
+    }
+
+
+    /**
+     * Method which provide the getting of the crypted extra
+     *
+     * @param intent    instance of the {@link Intent}
+     * @param intentKey {@link String} value of the intent key
+     * @param cryptKey  {@link String} value of the key
+     * @return {@link String} value of the encrypted value
+     */
+    protected String getEncryptedExtra(@Nullable Intent intent,
+                                       @Nullable String intentKey,
+                                       @Nullable String cryptKey) {
+        try {
+            if (cryptKey.length() < PSConstants.K_CRYPT_KEY_MIN_LENGHT) {
+                throw new Exception("Secret for the application should " +
+                        "be more that " + (PSConstants.K_CRYPT_KEY_MIN_LENGHT - 1) + " symbols");
+            }
+            final String value = intent.getStringExtra(intentKey);
+            return PSCryptHelper.decrypt(value, cryptKey);
+        } catch (Exception ex) {
+            Log.e(TAG, "getEncryptedExtra: ", ex);
+        }
+        return null;
     }
 
 }

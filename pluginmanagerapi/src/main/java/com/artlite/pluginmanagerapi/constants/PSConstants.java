@@ -35,4 +35,9 @@ public final class PSConstants {
     public static final String K_KEY_NEED_STOP
             = "com.artlite.plugin.need.stop";
 
+    /**
+     * {@link Integer} value of the minimum crypt key length
+     */
+    public static final int K_CRYPT_KEY_MIN_LENGHT = 20;
+
 }

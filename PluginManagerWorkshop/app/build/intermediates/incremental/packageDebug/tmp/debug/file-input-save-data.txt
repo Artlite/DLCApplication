@@ -1,27 +1,27 @@
 #Internal package file, do not edit.
-#Wed May 08 02:15:27 EEST 2019
-2.base=F\:\\Development\\DLCApplication\\PluginManagerWorkshop\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
+#Fri May 10 14:17:37 EEST 2019
+2.base=/Users/dlernatovich/Dev/Git/DLCApplication/PluginManagerWorkshop/app/build/intermediates/transforms/mergeJniLibs/debug/0
 5.set=NATIVE_RESOURCE
-0.path=lib/arm64-v8a/libpl_droidsonroids_gif.so
+0.path=lib/armeabi/libpl_droidsonroids_gif.so
 2.baseType=DIRECTORY
-3.base=F\:\\Development\\DLCApplication\\PluginManagerWorkshop\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
+3.base=/Users/dlernatovich/Dev/Git/DLCApplication/PluginManagerWorkshop/app/build/intermediates/transforms/mergeJniLibs/debug/0
 2.set=NATIVE_RESOURCE
-1.path=lib/x86_64/libpl_droidsonroids_gif.so
-4.base=F\:\\Development\\DLCApplication\\PluginManagerWorkshop\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+1.path=classes.dex
+4.base=/Users/dlernatovich/Dev/Git/DLCApplication/PluginManagerWorkshop/app/build/intermediates/transforms/mergeJniLibs/debug/0
 count=6
 5.baseType=DIRECTORY
 2.path=lib/x86/libpl_droidsonroids_gif.so
-5.base=F\:\\Development\\DLCApplication\\PluginManagerWorkshop\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
-4.set=DEX
-3.path=lib/armeabi/libpl_droidsonroids_gif.so
+5.base=/Users/dlernatovich/Dev/Git/DLCApplication/PluginManagerWorkshop/app/build/intermediates/transforms/mergeJniLibs/debug/0
+4.set=NATIVE_RESOURCE
+3.path=lib/arm64-v8a/libpl_droidsonroids_gif.so
 3.baseType=DIRECTORY
-1.set=NATIVE_RESOURCE
-4.path=classes.dex
+1.set=DEX
+4.path=lib/x86_64/libpl_droidsonroids_gif.so
 1.baseType=DIRECTORY
 5.path=lib/armeabi-v7a/libpl_droidsonroids_gif.so
-0.base=F\:\\Development\\DLCApplication\\PluginManagerWorkshop\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
+0.base=/Users/dlernatovich/Dev/Git/DLCApplication/PluginManagerWorkshop/app/build/intermediates/transforms/mergeJniLibs/debug/0
 0.baseType=DIRECTORY
 3.set=NATIVE_RESOURCE
-1.base=F\:\\Development\\DLCApplication\\PluginManagerWorkshop\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
+1.base=/Users/dlernatovich/Dev/Git/DLCApplication/PluginManagerWorkshop/app/build/intermediates/dex/debug/mergeDexDebug/out
 4.baseType=DIRECTORY
 0.set=NATIVE_RESOURCE

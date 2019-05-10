@@ -29,7 +29,9 @@ public class PSPluginListeningService extends PSBaseService {
         if (PSPluginApplication.getInstance() != null) {
             Log.d(TAG, "onStartCommand: plugin application isn't null");
             try {
-                final String name = intent.getStringExtra(PSConstants.K_KEY_PACKAGE);
+                final String name = this.getEncryptedExtra(intent,
+                        PSConstants.K_KEY_PACKAGE,
+                        PSPluginApplication.getInstance().getSecret());
                 Log.d(TAG, "onStartCommand: manager package " + name);
                 if (PSPluginApplication.getInstance().isNeedAnswer(name)) {
                     Log.d(TAG, "onStartCommand: plugin is need to answer");

@@ -11,6 +11,7 @@ import com.artlite.pluginmanagerapi.callbacks.PSManagerCallback;
 import com.artlite.pluginmanagerapi.constants.PSConstants;
 import com.artlite.pluginmanagerapi.core.PSManagerApplication;
 import com.artlite.pluginmanagerapi.core.PSPluginApplication;
+import com.artlite.pluginmanagerapi.helpers.PSCryptHelper;
 import com.artlite.pluginmanagerapi.models.PSPackageModel;
 
 import java.util.ArrayList;
@@ -162,9 +163,12 @@ public final class PSApiManager {
             try {
                 final Intent intent = new Intent();
                 intent.setClassName(packageName, PSConstants.K_PLUGIN_LISTEN_SERVICE);
-                intent.putExtra(PSConstants.K_KEY_PACKAGE, name);
-                Log.d(TAG, "ping: pinging intent " + intent);
-                this.startService(intent);
+                if (PSManagerApplication.getInstance() != null) {
+                    intent.putExtra(PSConstants.K_KEY_PACKAGE, PSCryptHelper.encrypt(name,
+                            PSManagerApplication.getInstance().getSecret()));
+                    Log.d(TAG, "ping: pinging intent " + intent);
+                    this.startService(intent);
+                }
             } catch (Exception ex) {
                 Log.e(TAG, "ping: ", ex);
             }
@@ -185,12 +189,13 @@ public final class PSApiManager {
             Log.d(TAG, "answer: plugin name " + name);
             final Intent intent = new Intent();
             intent.setClassName(managerPackage, PSConstants.K_MANAGER_LISTEN_SERVICE);
-            intent.putExtra(PSConstants.K_KEY_PACKAGE, name);
             if (PSPluginApplication.getInstance() != null) {
+                intent.putExtra(PSConstants.K_KEY_PACKAGE, PSCryptHelper.encrypt(name,
+                        PSPluginApplication.getInstance().getSecret()));
                 PSPluginApplication.getInstance().pluginWillAnswer(intent);
+                Log.d(TAG, "answer: starting intent " + intent);
+                this.startService(intent);
             }
-            Log.d(TAG, "answer: starting intent " + intent);
-            this.startService(intent);
         } catch (Exception ex) {
             Log.e(TAG, "answer: ", ex);
         }

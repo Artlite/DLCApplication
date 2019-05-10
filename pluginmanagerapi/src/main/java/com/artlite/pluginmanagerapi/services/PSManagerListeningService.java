@@ -27,7 +27,9 @@ public class PSManagerListeningService extends PSBaseService {
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (PSManagerApplication.getInstance() != null) {
             try {
-                final String name = intent.getStringExtra(PSConstants.K_KEY_PACKAGE);
+                final String name = this.getEncryptedExtra(intent,
+                        PSConstants.K_KEY_PACKAGE,
+                        PSManagerApplication.getInstance().getSecret());
                 PSApiManager.getInstance().add(name);
             } catch (Exception ex) {
                 Log.e(TAG, "onStartCommand: ", ex);

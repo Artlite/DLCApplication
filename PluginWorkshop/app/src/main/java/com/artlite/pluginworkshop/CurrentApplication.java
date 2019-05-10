@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.widget.Toast;
 
 import com.artlite.pluginmanagerapi.annotations.NonNull;
+import com.artlite.pluginmanagerapi.constants.PSConstants;
 import com.artlite.pluginmanagerapi.core.PSPluginApplication;
 import com.artlite.pluginmanagerapi.services.PSBaseService;
 
@@ -143,5 +144,23 @@ public class CurrentApplication extends PSPluginApplication {
     public void endTask(@NonNull PSBaseService service,
                         @NonNull Handler handler) {
         this.isNeedTask = false;
+    }
+
+    /**
+     * Method which provide the getting of the secret
+     * (WARNING SHOULD BE MORE THAN {@link PSConstants}.K_CRYPT_KEY_MIN_LENGHT SYMBOLS)
+     *
+     * @return {@link String} value of the secret
+     */
+    @Override
+    public String getSecret() {
+        return "BOc8lVt24PI5dEPGZMZFifPJJzBxT67DEe3QgxMtBlihP6Ijc8dj4u0eytRdZgTdFBvCv" +
+                "N8hRrJ3dAWrlCzUdSPj5EBsurhnmUC0Cfbra9xgHAV2dlYIuteoTEGONhzJSK0IwSqvGUHd" +
+                "jfCHMmkilfFr0Rig8LRsIqWHlHRfBI61ajfZnyAxxvcRXwCKCqJybfWnhtMvFiSN0KMcpD" +
+                "1YOF6fY7gWxVhh4AxYLSPKER7AWxEHvU4jYjFjdHG3PerlEdYgCmQKErOJhzUXzMWGs8ZO" +
+                "EFLrz3LctvT0OUoxNWpetPUQ8SyU7DIgBhMp2nhvzFSmogTFEOimvDX5sAC53H3pnuMNB0" +
+                "IEp15sobcS121AuRNXSsuFKmSN1tzfE8HgHUvCODQmfPk824ri5RNLm4YRHIxOEgUb68AL" +
+                "aLmG1UTXxQfTwcQwYFw1Gnd5cswc1bLrWBecIOu7hlMpXA9KSMEZepCOBKrxOliV7BGHMv" +
+                "XVWxmbGoJD";
     }
 }

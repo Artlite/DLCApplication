@@ -7,6 +7,7 @@ import android.util.Log;
 
 import com.artlite.pluginmanagerapi.annotations.NonNull;
 import com.artlite.pluginmanagerapi.annotations.Nullable;
+import com.artlite.pluginmanagerapi.constants.PSConstants;
 import com.artlite.pluginmanagerapi.managers.PSApplicationManager;
 import com.artlite.pluginmanagerapi.managers.PSContextManager;
 
@@ -49,6 +50,11 @@ abstract class PSBaseApplication extends Application {
         Log.d(TAG, "onCreate: init of the PSContextManager");
         PSContextManager.init(this);
         Log.d(TAG, "onCreate: ---");
+        if (this.getSecret().length() < PSConstants.K_CRYPT_KEY_MIN_LENGHT) {
+            Exception exception = new Exception("Secret for the application should " +
+                    "be more that " + PSConstants.K_CRYPT_KEY_MIN_LENGHT + " symbols");
+            Log.e(TAG, "onCreate: ", exception);
+        }
     }
 
     /**
@@ -84,4 +90,13 @@ abstract class PSBaseApplication extends Application {
         }
         this.getContext().startActivity(intent);
     }
+
+    /**
+     * Method which provide the getting of the secret
+     * (WARNING SHOULD BE MORE THAN {@link PSConstants}.K_CRYPT_KEY_MIN_LENGHT SYMBOLS)
+     *
+     * @return {@link String} value of the secret
+     */
+    @NonNull
+    public abstract String getSecret();
 }
